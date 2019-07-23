@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/app"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+        <android.support.v7.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/gradient"
+            android:id="@+id/toolbar">
+        </android.support.v7.widget.Toolbar>
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/cardview"
+        app:cardElevation="4dp"
+        android:layout_marginTop="0dp"
+        app:cardUseCompatPadding="true"
+        android:layout_below="@+id/app">
+
+          <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/imglay"
+                android:padding="20dp"
+                android:layout_below="@+id/relative">
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:background="@drawable/ic_person_black_24dp"
+                android:id="@+id/img"/>
+            <TextView
+                android:id="@+id/firstname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/img"
+                android:layout_marginLeft="10dp"
+                android:text="Lucky Carlo"
+                android:textSize="18dp"
+                android:layout_marginTop="10dp"/>
+
+            <ImageView
+                android:id="@+id/img2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/img"
+                android:layout_marginLeft="10dp"
+                android:layout_below="@id/firstname"
+                android:background="@drawable/ic_phone_black_24dp"
+                android:layout_marginTop="5dp"/>
+
+
+            <TextView
+                android:id="@+id/mobilenumber"
+                android:layout_below="@+id/firstname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/img2"
+                android:layout_marginLeft="5dp"
+                android:text="1234567890"
+                android:textSize="12dp"
+                android:layout_marginTop="5dp"/>
+
+            <TextView
+                android:id="@+id/emailid"
+                android:layout_below="@+id/img2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/img"
+                android:layout_marginLeft="10dp"
+                android:text="lucky@gmail.com"
+                android:textSize="12dp"
+                android:layout_marginTop="5dp"/>
+
+
+            <TextView
+                android:id="@+id/building"
+                android:layout_below="@+id/img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Building No : "
+                android:layout_marginTop="15dp"/>
+
+            <TextView
+                android:id="@+id/buildingname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/building"
+                android:layout_below="@+id/img"
+                android:text="A-wing "
+                android:layout_marginTop="15dp"/>
+
+            <TextView
+                android:id="@+id/flatno"
+                android:layout_below="@+id/building"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Flat No : "
+                android:layout_marginTop="10dp"/>
+
+            <TextView
+                android:id="@+id/flat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/flatno"
+                android:layout_below="@+id/buildingname"
+                android:text="101 "
+                android:layout_marginTop="10dp"/>
+
+            <TextView
+                android:id="@+id/joindate"
+                android:layout_below="@+id/flatno"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Membership Date : "
+                android:layout_marginTop="10dp"/>
+
+            <TextView
+                android:id="@+id/joindate2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/joindate"
+                android:layout_below="@+id/flat"
+                android:text="26/07/2018 "
+                android:layout_marginTop="10dp"/>
+
+
+
+            <TextView
+                android:id="@+id/active"
+                android:layout_below="@+id/joindate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="@color/green"
+                android:layout_marginTop="10dp"/>
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+</RelativeLayout>

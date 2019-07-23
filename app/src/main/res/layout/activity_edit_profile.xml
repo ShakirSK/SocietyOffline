@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".user.userprofile.edit_profile">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/app"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+        <android.support.v7.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/gradient"
+            android:id="@+id/toolbar">
+        </android.support.v7.widget.Toolbar>
+    </android.support.design.widget.AppBarLayout>
+
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/app"
+    android:layout_margin="15dp">
+    <TextView
+        android:id="@+id/fnm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="First Name"/>
+    <EditText
+        android:id="@+id/firstname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/fnm"
+        android:hint="First Name"
+        android:inputType="text"/>
+
+    <TextView
+        android:id="@+id/lnm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/firstname"
+        android:layout_marginLeft="5dp"
+        android:text="Last Name"/>
+    <EditText
+        android:id="@+id/lastname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lnm"
+        android:hint="Last Name"
+        android:inputType="text"/>
+
+    <TextView
+        android:id="@+id/mno"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lastname"
+
+        android:text="Mobile Number"/>
+    <EditText
+        android:id="@+id/mobile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/mno"
+        android:hint="Mobile No."
+        android:inputType="number"/>
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/btnheight"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/mobile"
+        android:background="@drawable/sqrbtn"
+        android:text="Submit"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/white"/>
+</RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+           <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/cardview"
+                app:cardElevation="4dp"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="1dp"
+                app:cardUseCompatPadding="true">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="5dp">
+                    <!--payment ID-->
+                    <TextView
+                        android:id="@+id/paymentid"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="20dp"
+                        android:text="Payment ID  :"
+                        />
+                    <TextView
+                        android:id="@+id/pid"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="20dp"
+                        android:text="  1"
+                        android:layout_toRightOf="@+id/paymentid"
+                        />
+                    <!--user ID-->
+                    <TextView
+                        android:id="@+id/userid"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="20dp"
+                        android:text="User ID  :"
+                        android:visibility="gone"
+                        android:layout_below="@+id/paymentid"
+                        />
+                    <TextView
+                        android:id="@+id/uid"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="20dp"
+                        android:text="  1"
+                        android:visibility="gone"
+                        android:layout_toRightOf="@+id/paymentid"
+                        android:layout_below="@+id/pid"
+                        />
+                    <!--bill amount-->
+                    <TextView
+                        android:id="@+id/billamt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="20dp"
+                        android:text="Bill Amount  :"
+                        android:layout_below="@+id/userid"
+                        />
+                    <TextView
+                        android:id="@+id/bamt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="20dp"
+                        android:text="  1300.00"
+                        android:layout_toRightOf="@+id/billamt"
+                        android:layout_below="@+id/uid"
+                        />
+                    <!--paid amount-->
+                    <TextView
+                        android:id="@+id/paidamt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="20dp"
+                        android:text="Paid Amount  :"
+                        android:visibility="gone"
+                        android:layout_below="@+id/billamt"
+                        />
+                    <TextView
+                        android:id="@+id/pamt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="20dp"
+                        android:text="  1300.00"
+                        android:visibility="gone"
+                        android:layout_toRightOf="@+id/billamt"
+                        android:layout_below="@+id/bamt"
+                        />
+                    <!--Bank Account-->
+                    <TextView
+                        android:id="@+id/bankacc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="20dp"
+                        android:text="Bank Account  :"
+                        android:visibility="gone"
+                        android:layout_below="@+id/paidamt"
+                        />
+                    <TextView
+                        android:id="@+id/bacc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="20dp"
+                        android:text="  SBI"
+                        android:visibility="gone"
+                        android:layout_toRightOf="@+id/bankacc"
+                        android:layout_below="@+id/pamt"
+                        />
+                    <!--Payment Mode-->
+                    <TextView
+                        android:id="@+id/paymentmode"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="20dp"
+                        android:text="Payment Mode  :"
+                        android:layout_below="@+id/bankacc"
+                        />
+                    <TextView
+                        android:id="@+id/pmode"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="20dp"
+                        android:text="  1"
+                        android:layout_toRightOf="@+id/paymentmode"
+                        android:layout_below="@+id/bacc"
+                        />
+                    <!--Reference Number-->
+                    <TextView
+                        android:id="@+id/refno"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="20dp"
+                        android:text="Reference Number  :"
+                        android:visibility="visible"
+                        android:layout_below="@+id/paymentmode"
+                        />
+                    <TextView
+                        android:id="@+id/rno"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="20dp"
+                        android:text="a1234"
+                        android:visibility="visible"
+                        android:layout_marginLeft="10dp"
+                        android:layout_below="@+id/refno"
+                        />
+                    <!--Payment Recieved Date-->
+                    <TextView
+                        android:id="@+id/payrecievedate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="20dp"
+                        android:visibility="gone"
+                        android:text="Payment recieved at :"
+                        android:layout_below="@+id/rno"
+                        />
+                    <TextView
+                        android:id="@+id/dorec"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="20dp"
+                        android:text="  2016-01-02"
+                        android:visibility="gone"
+                        android:layout_toRightOf="@+id/payrecievedate"
+                        android:layout_below="@+id/rno"
+                        />
+                    <!--Payment deposite amount-->
+                    <TextView
+                        android:id="@+id/depositeamt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="20dp"
+                        android:visibility="gone"
+                        android:text="Payment Deposite Amount  :"
+                        android:layout_below="@+id/payrecievedate"
+                        />
+                    <TextView
+                        android:id="@+id/damt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="20dp"
+                        android:text="  134.00"
+                        android:visibility="gone"
+                        android:layout_toRightOf="@+id/depositeamt"
+                        android:layout_below="@+id/dorec"
+                        />
+                    <!--Paymnet deposite date-->
+                    <TextView
+                        android:id="@+id/depositedate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="20dp"
+                        android:text="Payment Date: "
+                        android:layout_below="@+id/depositeamt"
+                        />
+                    <TextView
+                        android:id="@+id/ddate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="20dp"
+                        android:text="2015-02-12"
+                        android:layout_toRightOf="@+id/depositedate"
+                        android:layout_below="@+id/depositeamt"
+                        />
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+</RelativeLayout>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/app"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+        <android.support.v7.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/gradient"
+            android:id="@+id/toolbar">
+        </android.support.v7.widget.Toolbar>
+    </android.support.design.widget.AppBarLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/app"
+        android:id="@+id/bulllay">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:textSize="15dp"
+            android:text="Select Date: "
+            android:layout_marginTop="15dp"
+            android:id="@+id/date"/>
+
+        <EditText
+            android:id="@+id/date2"
+            android:layout_width="wrap_content"
+            android:hint="yyyy-mm-dd"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/date" />
+
+        <EditText
+            android:id="@+id/requried"
+            android:layout_below="@+id/date"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:layout_margin="15dp"
+            android:textAlignment="textStart"
+            android:inputType="textMultiLine"
+            android:gravity="start"
+            android:hint="Enter Comments"
+            android:background="@drawable/square" />
+
+        <Button
+            android:id="@+id/submitbtn"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/btnheight"
+            android:layout_below="@+id/requried"
+            android:background="@drawable/sqrbtn"
+            android:layout_margin="15dp"
+            android:text="Publish"
+            android:textAllCaps="false"
+            android:textSize="18dp"
+            android:textColor="@color/white"/>
+
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/recycleview"
+        android:layout_below="@+id/bulllay"/>
+
+</RelativeLayout>

@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="main.society365365.maneger.addmember.AddMember">
+
+
+        <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/scrollView">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/linearlayout"
+                            android:orientation="horizontal"
+                            android:layout_centerHorizontal="true">
+
+                                <ImageView
+                                    android:layout_width="70dp"
+                                    android:layout_height="70dp"
+                                    android:id="@+id/img"
+                                    android:background="@drawable/ic_person_black_24dp"
+                                    android:layout_marginTop="10dp" />
+
+                                <ImageView
+                                    android:id="@+id/img2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/ic_control_point_black_24dp"
+                                    android:layout_marginTop="60dp"/>
+                        </LinearLayout>
+
+                        <android.support.design.widget.TextInputLayout
+                            android:id="@+id/firstname"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/linearlayout"
+                            android:layout_marginTop="10dp">
+
+                                <EditText
+                                    android:id="@+id/fname"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:hint="First Name"
+                                    android:inputType="text"
+                                    android:padding="15dp" />
+                        </android.support.design.widget.TextInputLayout>
+
+
+                        <android.support.design.widget.TextInputLayout
+                            android:id="@+id/lastname"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/firstname">
+
+                                <EditText
+                                    android:id="@+id/lname"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:hint="Last Name"
+                                    android:inputType="text"
+                                    android:padding="15dp" />
+                        </android.support.design.widget.TextInputLayout>
+
+                        <android.support.design.widget.TextInputLayout
+                            android:id="@+id/mobilenumber"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/lastname">
+
+                                <EditText
+                                    android:id="@+id/mobnum"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:hint="Mobile Number"
+                                    android:inputType="number"
+                                    android:padding="15dp" />
+                        </android.support.design.widget.TextInputLayout>
+
+                        <android.support.design.widget.TextInputLayout
+                            android:id="@+id/emailid"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/mobilenumber">
+                                <EditText
+                                    android:id="@+id/email"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:hint="Email_Id"
+                                    android:inputType="textEmailAddress"
+                                    android:padding="15dp" />
+                        </android.support.design.widget.TextInputLayout>
+
+
+                        <android.support.design.widget.TextInputLayout
+                            android:id="@+id/date"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/emailid">
+                                <EditText
+                                    android:id="@+id/date2"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:hint="Membership Start Date : "
+                                    android:inputType="text"
+                                    android:padding="15dp" />
+                        </android.support.design.widget.TextInputLayout>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/building"
+                            android:text="Building No : "
+                            android:layout_marginLeft="15dp"
+                            android:textSize="15dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_below="@+id/date"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/linearlayout2"
+                            android:layout_margin="10dp"
+                            android:background="@drawable/square"
+                            android:layout_below="@+id/building"
+                            android:orientation="vertical">
+
+                                <Spinner
+                                    android:layout_width="match_parent"
+                                    android:layout_height="40dp"
+                                    android:id="@+id/bulidingnum">
+                                </Spinner>
+                        </LinearLayout>
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/flat"
+                            android:text="Flat No : "
+                            android:layout_marginLeft="15dp"
+                            android:textSize="15dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_below="@+id/linearlayout2"/>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/linearlayout3"
+                            android:background="@drawable/square"
+                            android:layout_below="@+id/flat"
+                            android:layout_margin="10dp"
+                            android:orientation="vertical">
+
+                                <Spinner
+                                    android:layout_width="match_parent"
+                                    android:layout_height="40dp"
+                                    android:id="@+id/flatnum"
+                                    android:layout_below="@id/flat">
+                                </Spinner>
+                        </LinearLayout>
+
+
+                        <Button
+                            android:id="@+id/submitbtn"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/btnheight"
+                            android:layout_below="@+id/linearlayout3"
+                            android:text="Submit"
+                            android:textSize="18dp"
+                            android:textColor="@color/white"
+                            android:layout_margin="10dp"
+                            android:background="@drawable/sqrbtn"/>
+
+                </RelativeLayout>
+        </ScrollView>
+
+</RelativeLayout>

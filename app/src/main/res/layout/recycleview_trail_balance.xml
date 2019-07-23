@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/partylayout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="15dp"
+    >
+
+    <TextView
+        android:id="@+id/partyname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:text="sdsd"
+        android:fontFamily="@font/montserratlight"
+        />
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/partyname">
+
+        <TextView
+            android:id="@+id/dr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserratlight"
+            android:text="text"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserratlight"
+            android:text=" | "/>
+
+        <TextView
+            android:id="@+id/cr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserratlight"
+            android:text="text"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:orientation="vertical"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@id/partyname">
+          <TextView
+              android:id="@+id/amountop"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:textColor="@color/black"
+              android:text="sdsd"
+              android:fontFamily="@font/montserratlight"
+              />
+        <TextView
+            android:id="@+id/amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:fontFamily="@font/montserratlight"
+            android:text="text"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

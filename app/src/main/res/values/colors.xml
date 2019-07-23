@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#46a5ce</color>
+    <color name="colorPrimaryDark">#564f45</color>
+    <color name="colorAccent">#46a5ce</color>
+    <color name="black">#000</color>
+    <color name="white">#fff</color>
+    <color name="darkgray">#3d4955</color>
+    <color name="darkgreen">#24A3B5</color>
+    <color name="darkOrange">#ff2200</color>
+    <color name="green">#02a03c</color>
+    <color name="gray">#35434e</color>
+    <color name="red">#FFDE2915</color>
+    <color name="lightgreen">#FFC5E2C5</color>
+    <color name="blue">#24A3B5</color>
+    <color name="lightgray">#FFB9BABA</color>
+    <color name="purple">#8a56e9</color>
+    <color name="brown">#FFB45E61</color>
+    <color name="toplayout">#cd46a5ce</color>
+    //bottomnavgation Color
+    <color name="barbottom">#42C0FB</color>
+    <color name="grey">#b3b3b3</color>
+
+</resources>

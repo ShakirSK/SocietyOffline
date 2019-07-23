@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="2dp"
+        app:cardElevation="2dp"
+        app:cardUseCompatPadding="true">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Party Name:"
+                android:id="@+id/party"
+                android:textSize="15dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="KJS Bank A/c"
+                android:id="@+id/partyname"
+                android:textSize="15dp"
+                android:layout_below="@id/party" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/partyname"
+                android:text="Voucher Type:"
+                android:id="@+id/voucher"
+                android:layout_marginTop="3dp"
+                android:textSize="15dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Payment"
+                android:id="@+id/vtype"
+                android:textSize="15dp"
+                android:layout_below="@id/partyname"
+                android:layout_toRightOf="@id/voucher"
+                android:layout_marginTop="3dp"
+                android:layout_marginLeft="5dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/voucher"
+                android:text="Voucher Number:"
+                android:id="@+id/voucherno"
+                android:textSize="15dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1"
+                android:id="@+id/vno"
+                android:textSize="15dp"
+                android:layout_below="@id/voucher"
+                android:layout_toRightOf="@id/voucherno"
+                android:layout_marginLeft="5dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/voucherno"
+                android:text="Amount:"
+                android:id="@+id/amount"
+                android:textSize="15dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="169179"
+                android:id="@+id/amt"
+                android:textSize="15dp"
+                android:layout_toRightOf="@+id/amount"
+                android:layout_below="@+id/voucherno"
+                android:layout_marginLeft="5dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2018-04-03"
+                android:id="@+id/sdate"
+                android:textSize="13dp"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/vno"/>
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+</RelativeLayout>

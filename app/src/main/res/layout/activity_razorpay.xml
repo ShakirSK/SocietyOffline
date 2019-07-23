@@ -1,0 +1,135 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/gradient">
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/app"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+        <android.support.v7.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/gradient"
+            android:id="@+id/toolbar">
+        </android.support.v7.widget.Toolbar>
+    </android.support.design.widget.AppBarLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:id="@+id/billlayout">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="110dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_alignParentBottom="true"
+                android:background="#E2E2E2"
+                android:gravity="center">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="35dp"
+                    android:paddingBottom="0dp"
+                    android:textSize="12sp"
+                    android:text="Order #RZP42"
+                   android:id="@+id/billidtxt" />
+            </LinearLayout>
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_centerHorizontal="true"
+                android:background="#FFFFFF"
+                android:src="@drawable/home" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:paddingTop="15dp"
+            android:background="#f2f2f2"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:paddingTop="0dp"
+                android:paddingBottom="5dp"
+                android:textSize="20sp"
+                android:text="Society Managment"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:paddingTop="0dp"
+                android:paddingBottom="0dp"
+                android:textSize="12sp"
+                android:text="INR 1.00"
+                android:id="@+id/amottxt"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:paddingTop="5dp"
+                android:paddingBottom="0dp"
+                android:textSize="12sp"
+                android:textStyle="italic"
+                android:visibility="gone"
+                />
+
+            <Button
+                android:id="@+id/btn_pay"
+                android:layout_width="wrap_content"
+                android:layout_height="36dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:layout_gravity="center_horizontal"
+                android:paddingRight="20dp"
+                android:paddingLeft="20dp"
+                android:background="@drawable/sqrbtn"
+                android:textSize="14sp"
+                android:textColor="#fcfcfc"
+                android:text="PAY" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:layout_below="@+id/billlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:padding="10dp"
+        android:background="@drawable/square"
+        android:textStyle="bold"
+        android:textColor="@color/blue"
+        android:textAlignment="center"
+        android:id="@+id/skill"
+        />
+
+    <TextView
+        android:layout_below="@+id/skill"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:padding="10dp"
+        android:textAlignment="center"
+        android:id="@+id/paymentid" />
+
+</RelativeLayout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center"
+    android:padding="08dp"
+    android:background="@color/white">
+
+    <TextView
+        android:id="@+id/lblListHeader"
+        android:layout_width="190dp"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:textSize="17dp"
+        android:text="Change password"/>
+    <ImageView
+        android:background="@drawable/ic_add_black_24dp"
+        android:id="@+id/list_indicator"
+        android:layout_width="30dp"
+        android:layout_height="30dp"/>
+</LinearLayout>

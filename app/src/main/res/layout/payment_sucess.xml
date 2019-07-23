@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/done"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="130dp"
+        android:background="@drawable/done"/>
+
+    <TextView
+        android:layout_below="@+id/done"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:padding="10dp"
+        android:background="@drawable/square"
+        android:textStyle="bold"
+        android:textColor="@color/blue"
+        android:text="Payment Success"
+        android:textAlignment="center"
+        android:id="@+id/skill" />
+
+    <TextView
+        android:layout_below="@+id/skill"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:padding="10dp"
+        android:text="Payment Id:"
+        android:textAlignment="center"
+        android:id="@+id/paymentid" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/btnheight"
+        android:text="DONE"
+        android:layout_below="@+id/paymentid"
+        android:id="@+id/donebtn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:ems="7"
+        android:textColor="@color/white"
+        android:background="@drawable/sqrbtn"/>
+
+
+</RelativeLayout>

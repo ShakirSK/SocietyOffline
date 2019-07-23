@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    android:id="@+id/wholebody"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="main.society365365.maneger.partyledger.PartyLedgerDetailPage">
+
+    <RelativeLayout
+        android:id="@+id/up"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <android.support.design.widget.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/app"
+            android:background="@color/barbottom"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            android:elevation="0dp"
+            app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+            <android.support.v7.widget.Toolbar
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tool"
+                app:titleTextAppearance="@style/Toolbar.TitleText"
+                >
+
+                <!-- <ImageView
+                     android:id="@+id/notification"
+                     android:layout_width="40dp"
+                     android:layout_height="40dp"
+                     android:background="@drawable/ic_notifications_none_black_24dp"
+                    android:layout_marginLeft="250dp"/>-->
+            </android.support.v7.widget.Toolbar>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <ImageView
+                    android:id="@+id/leftarrow"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="10dp"
+                    android:padding="10dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_leftarrow"/>
+                <LinearLayout
+                    android:id="@+id/calander"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_weight="2"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="10dp"
+                        android:padding="10dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_calendar"/>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:layout_weight="2"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/app"
+                            android:text="YEAR"
+                            android:textSize="12sp"
+                            android:textColor="@color/white"
+                            />
+                        <TextView
+                            android:id="@+id/summaryname"
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp"
+                            android:layout_below="@+id/app"
+                            android:text="1-Apr-2018 - 31-Mar-2019"
+                            android:textColor="@color/white"
+                            android:textSize="17dp"
+                            />
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:orientation="vertical"
+                        android:layout_marginRight="20dp"
+                        android:layout_alignParentRight="true">
+                        <TextView
+                            android:id="@+id/totalamountgross"
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp"
+                            android:layout_below="@+id/app"
+                            android:text=""
+                            android:layout_gravity="right"
+                            android:textColor="@color/white"
+                            android:textSize="17dp"
+                            />
+                    </LinearLayout>
+                </LinearLayout>
+                <ImageView
+                    android:id="@+id/rightarrow"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="10dp"
+                    android:padding="10dp"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/ic_rightarrow"/>
+            </LinearLayout>
+        </android.support.design.widget.AppBarLayout>
+
+        <LinearLayout
+            android:id="@+id/openingbalance"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal"
+            android:background="#faf4f4"
+            android:layout_below="@+id/app">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center"
+                android:src="@drawable/uparrowkey"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/app"
+                android:text="Opening Balance"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:gravity="center"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="right">
+                <TextView
+                    android:id="@+id/openingbalanceamount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/app"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="15dp"
+                    android:textColor="@color/black"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:id="@+id/recycleview"
+            android:layout_below="@+id/openingbalance"
+            android:layout_marginBottom="60dp"
+            android:layout_margin="5dp">
+
+        </android.support.v7.widget.RecyclerView>
+
+
+
+
+
+    </RelativeLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+
+        <LinearLayout
+            android:id="@+id/closingbalance"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal"
+            android:background="#faf4f4"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/downwardsarrowkey" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/app"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:gravity="center"
+                android:text="Closing Balance"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="right">
+
+                <TextView
+                    android:id="@+id/closingbalanceamount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/app"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="15dp"
+                    android:textColor="@color/black" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </android.support.constraint.ConstraintLayout>
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,422 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    android:id="@+id/wholebody"
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="main.society365365.maneger.partyledger.PartyLedgerDetailPage">
+
+    <RelativeLayout
+        android:id="@+id/up"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.design.widget.AppBarLayout
+            android:id="@+id/app"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/barbottom"
+            android:elevation="0dp"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/tool"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:titleTextAppearance="@style/Toolbar.TitleText">
+
+                <!-- <ImageView
+                     android:id="@+id/notification"
+                     android:layout_width="40dp"
+                     android:layout_height="40dp"
+                     android:background="@drawable/ic_notifications_none_black_24dp"
+                    android:layout_marginLeft="250dp"/>-->
+            </android.support.v7.widget.Toolbar>
+
+
+        </android.support.design.widget.AppBarLayout>
+
+        <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:orientation="vertical"
+            android:layout_below="@+id/app">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+          >
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/partylayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:padding="15dp">
+
+            <TextView
+                android:id="@+id/partysummaryname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/partysummaryname"
+                
+                />
+
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/summaryname"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_below="@+id/partylayout"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="15dp"
+            android:gravity="center_vertical"
+            android:background="@color/white"
+            android:text="SUMMARY"
+            android:textColor="@color/gray" />
+        <View
+            android:id="@+id/lineview"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@+id/summaryname"
+            android:background="@color/lightgray"
+            />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycleviewsummary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lineview"
+
+            android:background="@color/white"
+            >
+
+        </android.support.v7.widget.RecyclerView>
+
+            <!--for payment in cheque contra-->
+            <RelativeLayout
+                android:id="@+id/bankacc_layout_contra"
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:visibility="gone"
+                android:layout_below="@+id/recycleviewsummary"
+                android:padding="15dp"
+                >
+
+
+                <TextView
+                    android:id="@+id/chequeno_contra"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    />
+
+                <TextView
+                    android:id="@+id/chequedate_contra"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/chequeno_contra"
+                    android:text=""
+                    />
+                <TextView
+                    android:id="@+id/bankdate_contra"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/chequedate_contra"
+                    android:text=""
+                    />
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:orientation="vertical"
+                    android:layout_alignParentRight="true"
+                  >
+
+                    <TextView
+                        android:id="@+id/BAtotal_contra"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/grosstotal_layout"
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/bankacc_layout_contra"
+            android:layout_marginTop="15dp"
+            android:background="@color/white"
+            android:padding="15dp"
+            >
+
+            <TextView
+                android:id="@+id/partyname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorAccent"
+                android:text="Gross Total"
+                android:textStyle="bold"
+                android:textSize="17dp"
+                />
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:orientation="vertical"
+                android:layout_alignParentRight="true"
+                android:layout_toRightOf="@id/partyname">
+
+                <TextView
+                    android:id="@+id/TOtalamount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorAccent"
+                    android:textStyle="bold"
+                    android:textSize="17dp"
+                 />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+<!--voucher type receipt-->
+        <LinearLayout
+            android:id="@+id/receiptbody"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/grosstotal_layout"
+            android:orientation="vertical">
+        <TextView
+            android:id="@+id/Paymentdetail"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_below="@+id/grosstotal_layout"
+            android:layout_marginTop="15dp"
+            android:paddingLeft="15dp"
+            android:gravity="center_vertical"
+            android:background="@color/white"
+            android:text="PAYMENT DETAILS"
+            android:textColor="@color/lightgray" />
+        <View
+            android:id="@+id/lineview2"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@+id/Paymentdetail"
+            android:background="@color/lightgray"
+            />
+
+            <!--for payment in cheque-->
+        <RelativeLayout
+            android:id="@+id/bankacc_layout"
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:layout_below="@+id/lineview2"
+            android:padding="15dp"
+            >
+
+            <TextView
+                android:id="@+id/bankaccount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:text="Bank A/c"
+                />
+
+            <TextView
+                android:id="@+id/chequeno"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/bankaccount"
+                android:text=""
+                />
+
+            <TextView
+                android:id="@+id/chequedate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/chequeno"
+                android:text=""
+                />
+            <TextView
+                android:id="@+id/bankdate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/chequedate"
+                android:text=""
+                />
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:orientation="vertical"
+                android:layout_alignParentRight="true"
+                android:layout_toRightOf="@id/bankaccount">
+
+                <TextView
+                    android:id="@+id/BAtotal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+            <!--for payment in cash-->
+            <RelativeLayout
+                android:id="@+id/bankacc_layoutforcash"
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:layout_below="@+id/lineview2"
+                android:visibility="gone"
+                android:padding="15dp"
+                >
+
+                <TextView
+                    android:id="@+id/partynamecash"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Cash"
+                    android:textStyle="bold"
+                    android:textSize="17dp"
+                    android:textColor="@color/black"
+                    />
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:orientation="vertical"
+                    android:layout_alignParentRight="true"
+                    android:layout_toRightOf="@id/partynamecash">
+
+                    <TextView
+                        android:id="@+id/TOtalamountCash"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/colorAccent"
+                        android:textStyle="bold"
+                        android:textSize="17dp"
+                        />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        <TextView
+            android:id="@+id/Narration"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_below="@+id/bankacc_layout"
+            android:layout_marginTop="15dp"
+            android:paddingLeft="15dp"
+            android:gravity="center_vertical"
+            android:background="@color/white"
+            android:text="NARRATION"
+            android:textColor="@color/lightgray" />
+        <View
+            android:id="@+id/lineview3"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@+id/Narration"
+            android:background="@color/lightgray"
+            />
+
+        <TextView
+            android:id="@+id/Narrationvalue"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_below="@+id/lineview3"
+           android:paddingLeft="15dp"
+            android:gravity="center_vertical"
+            android:background="@color/white"
+            android:textColor="@color/gray" />
+        </LinearLayout>
+
+            <!--voucher type journal-->
+            <LinearLayout
+                android:id="@+id/receiptbodyjournal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/receiptbody"
+                android:visibility="gone"
+                android:orientation="vertical">
+
+
+
+
+
+                <TextView
+                    android:id="@+id/Narrationforjournal"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_below="@+id/bankacc_layout"
+                    android:layout_marginTop="15dp"
+                    android:paddingLeft="15dp"
+                    android:gravity="center_vertical"
+                    android:background="@color/white"
+                    android:text="NARRATION"
+                    android:textColor="@color/lightgray" />
+                <View
+                    android:id="@+id/lineview3journal"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_below="@+id/Narration"
+                    android:background="@color/lightgray"
+                    />
+
+                <TextView
+                    android:id="@+id/Narrationvalueforjournal"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_below="@+id/lineview3"
+                    android:paddingLeft="15dp"
+                    android:gravity="center_vertical"
+                    android:background="@color/white"
+                    android:textColor="@color/gray" />
+            </LinearLayout>
+        </RelativeLayout>
+        </ScrollView>
+    </RelativeLayout>
+
+
+</RelativeLayout>

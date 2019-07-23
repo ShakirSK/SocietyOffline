@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:gravity="center"
+    android:padding="20dp">
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Are you sure want to delete?"
+    android:layout_marginTop="15dp"
+    android:textSize="18dp"
+    android:id="@+id/textmsg"/>
+  <LinearLayout
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_centerHorizontal="true"
+      android:layout_marginTop="20dp"
+      android:layout_below="@+id/textmsg">
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/deleteyes"
+        android:text="Yes"
+        android:background="@drawable/square"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textmsg"
+        android:id="@+id/nodelete"
+        android:text="No"
+        android:layout_marginLeft="30dp"
+        android:background="@drawable/square"/>
+  </LinearLayout>
+
+</RelativeLayout>

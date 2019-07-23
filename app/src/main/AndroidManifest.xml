@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="test.soc365.society365">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_CALENDAR" />
+    <uses-permission android:name="android.permission.WRITE_CALENDAR" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+
+    <!-- Add the RECEIVE_SMS permission to enable OTP reading -->
+    <!-- <uses-permission android:name="android.permission.RECEIVE_SMS" /> -->
+    <application
+        android:name=".maneger.VolleyMultipartRequest.Initializer"
+        android:allowBackup="true"
+        android:exported="true"
+        android:hardwareAccelerated="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+
+        <!-- Define your provider -->
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="${applicationId}.myfileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_provider_paths" />
+        </provider>
+
+        <activity android:name=".splash_screen.Splash_screen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".login.Login" />
+        <activity android:name=".maneger.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value=".maneger.MainActivity" />
+
+        <!--
+         <activity android:name=".maneger.AddMember"
+     test.soc365.society365y365.maneger.paymentsocietymember/>
+
+        <activity
+            android:name=".maneger.paymentsocietymember.MemberPaymentDetails"
+            android:label="Member PaymentDetails" />
+        -->
+        <activity
+            android:name=".maneger.process_member_request.MemberRequestWrite"
+            android:label="Member Request" />
+        <activity
+            android:name=".maneger.reports.SocietyLedger"
+            android:label="Society Ledger" />
+        <activity
+            android:name=".maneger.reports.PaymentReceivedLedger"
+            android:label="Payment Received" />
+        <activity
+            android:name=".maneger.reports.PaymentModeLedger"
+            android:label="Payment Made" />
+        <activity
+            android:name=".maneger.reports.CollectionLedger"
+            android:label="Collection Reports" />
+        <activity android:name=".maneger.reports.ManagerReport" />
+        <activity android:name=".maneger.reports.CollectionReports" />
+        <!--
+            <activity
+            android:name=".maneger.ProcessMemberRequest"
+            android:label="MemberRequestDetail" />
+              <activity android:name=".maneger.Create_billCharges.CreateBill" />
+        -->
+
+        <activity android:name=".user.Home" />
+        <activity
+            android:name=".user.changepass.change_password"
+            android:label="Change Password" />
+        <activity
+            android:name=".user.list_request_society.detailed_requestlist"
+            android:label="Request Detail" />
+        <activity
+            android:name=".maneger.viewmember.MemberDetailsFragment"
+            android:label="User Profile" />
+        <activity
+            android:name=".maneger.editmember.EditMember"
+            android:label="Edit Member" />
+        <activity
+            android:name=".maneger.Create_billCharges.BillCharges"
+            android:label="Bill Charges" />
+        <activity
+            android:name=".ForgotPassword"
+            android:label="Forgot Password" />
+        <activity
+            android:name=".maneger.Report.Reports"
+            android:label="Reports">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".maneger.MainActivity" />
+        </activity>
+        <activity
+            android:name=".maneger.Report.Reportsdetails"
+            android:label="Report Details">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".maneger.MainActivity" />
+        </activity>
+        <activity
+            android:name=".maneger.Report.Memberreport"
+            android:label="Member Report">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".maneger.MainActivity" />
+        </activity>
+        <activity android:name=".maneger.editmember.Updatemember" />
+        <activity
+            android:name=".maneger.auditreport.AuditFragment"
+            android:label="Audit Report" />
+        <activity
+            android:name=".maneger.MomReport.MomFragment"
+            android:label="MOM" />
+        <activity
+            android:name=".maneger.Create_billCharges.CreateBill"
+            android:label="Create Bill" />
+        <activity
+            android:name=".maneger.NotificationFragment"
+            android:label="Notifications" />
+        <activity
+            android:name=".maneger.ManagerProfile"
+            android:label="Profile" />
+        <activity
+            android:name=".maneger.addmember.AddMember"
+            android:noHistory="true" /> <!-- android:label="Add Member" -->
+        <activity
+            android:name=".maneger.viewmember.ViewFragment"
+            android:label="Member List" />
+        <activity
+            android:name=".maneger.process_member_request.ProcessMemberRequest"
+            android:label="Process Member Request" />
+        <activity
+            android:name=".maneger.paymentsocietymember.Process_society_accounting"
+            android:label="Process Society Accounting" />
+        <activity
+            android:name=".maneger.bulletin.BulletineFragment"
+            android:label="Bulletin Board" />
+        <activity
+            android:name=".maneger.society_activity.SocietyActivityFragment"
+            android:label="Society Activity" />
+        <activity
+            android:name=".user.userprofile.edit_profile"
+            android:label="Edit Profile" />
+        <activity
+            android:name=".maneger.Report.Otherreport"
+            android:label="Report" />
+
+        <!--
+        Add your API key here
+        <meta-data
+            android:name="com.razorpay.ApiKey"
+            android:value="rzp_live_ILgsfZCZoFIKMb" />
+        -->
+        <meta-data
+            android:name="com.razorpay.ApiKey"
+            android:value="rzp_test_zNqW2Grnd1ZXsh" />
+
+        <activity android:name=".user.razorpay.RazorpayActivity" />
+        <activity android:name=".maneger.partyledger.PartyLedgerDetailPage" />
+        <activity android:name=".maneger.partyledger.PartySummary" />
+        <activity android:name=".maneger.Daybook.DayBookActivity" />
+        <activity android:name=".maneger.Sales_Register.SalesRegisterActivity" />
+        <activity android:name=".maneger.Reciept.RecieptActivity" />
+        <activity android:name=".maneger.PaymentReports.PaymentReportActivity" />
+        <activity android:name=".maneger.Sales_Register.SalesRegisterDetailPage" />
+        <activity android:name=".maneger.PaymentReports.PaymentChildActivity" />
+        <activity android:name=".maneger.Cash_Bank_Balance.CashBankBalanceActivity" />
+        <activity android:name=".maneger.Trail_Balance.TrailBalanceActivity" />
+        <activity android:name=".maneger.Main2Activity" />
+        <activity android:name=".maneger.Outstanding_Receivable.ReceivableActivity" />
+        <activity
+            android:name=".maneger.showpdftest_file"
+            android:launchMode="singleTop" />
+        <activity android:name=".maneger.Sales_Register.SalesChildActivity" />
+
+        <!-- rollbar -->
+        <meta-data
+            android:name="com.rollbar.android.ACCESS_TOKEN"
+            android:value="d8aa828ba5b04b8f953ab5383d53cda9" />
+
+        <activity android:name=".EmptyActivity" />
+        <activity android:name=".maneger.Cash_Bank_Balance.CashBookDetailPage" />
+        <activity android:name=".maneger.Trail_Balance.TrailBalance"></activity>
+    </application>
+
+</manifest>

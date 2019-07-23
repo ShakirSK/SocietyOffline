@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    android:id="@+id/wholebody"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="main.society365365.maneger.partyledger.PartyLedgerDetailPage">
+
+    <RelativeLayout
+        android:id="@+id/up"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <android.support.design.widget.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/app"
+            android:background="@color/barbottom"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            android:elevation="0dp"
+            app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+            <android.support.v7.widget.Toolbar
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tool"
+                app:titleTextAppearance="@style/Toolbar.TitleText"
+                >
+
+                <!-- <ImageView
+                     android:id="@+id/notification"
+                     android:layout_width="40dp"
+                     android:layout_height="40dp"
+                     android:background="@drawable/ic_notifications_none_black_24dp"
+                    android:layout_marginLeft="250dp"/>-->
+            </android.support.v7.widget.Toolbar>
+
+
+
+            <LinearLayout
+                android:id="@+id/calander"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="10dp"
+                    android:padding="10dp"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="10dp"
+                    android:src="@drawable/ic_calendar"/>
+
+                <TextView
+                    android:id="@+id/summaryname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/app"
+                    android:text=""
+                    android:textColor="@color/white"
+                    android:textSize="15dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="20dp"
+                    />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:orientation="vertical"
+                    android:layout_marginRight="20dp"
+                    android:layout_alignParentRight="true">
+                    <TextView
+                        android:id="@+id/totalamountgross"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_below="@+id/app"
+                        android:text=""
+                        android:layout_gravity="right"
+                        android:textColor="@color/white"
+                        android:textSize="17dp"
+                        />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </android.support.design.widget.AppBarLayout>
+
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:id="@+id/recycleview"
+            android:layout_below="@+id/app"
+            android:layout_marginBottom="60dp"
+            android:layout_margin="5dp">
+
+        </android.support.v7.widget.RecyclerView>
+
+
+
+
+
+    </RelativeLayout>
+
+</android.support.design.widget.CoordinatorLayout>

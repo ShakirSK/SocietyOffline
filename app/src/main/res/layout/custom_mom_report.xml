@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardview2"
+    app:cardElevation="3dp"
+    android:layout_marginTop="0dp"
+    app:cardUseCompatPadding="true"
+    android:layout_below="@id/relative4"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cardview"
+        android:id="@+id/relative2"
+        android:background="@color/white"
+        android:padding="5dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/mom"
+            android:layout_marginLeft="10dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/report"
+            android:layout_toRightOf="@+id/mom" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone"
+            android:id="@+id/linear"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_delete_black_24dp"
+                android:id="@+id/delete"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/dateupload"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="3dp"
+            android:layout_below="@+id/report" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/date"
+            android:textSize="10dp"
+            android:layout_below="@+id/report"
+            android:layout_toRightOf="@+id/dateupload"
+            android:layout_marginTop="3dp" />
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

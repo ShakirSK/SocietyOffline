@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".maneger.paymentsocietymember.Process_society_accounting">
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/app"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+        <android.support.v7.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/gradient"
+            android:id="@+id/toolbar">
+        </android.support.v7.widget.Toolbar>
+    </android.support.design.widget.AppBarLayout>
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/cardview"
+        android:layout_below="@id/app"
+        app:cardElevation="4dp"
+        app:cardUseCompatPadding="true">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="3dp">
+            <EditText
+                android:id="@+id/year"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/date"
+                android:hint="YYYY"
+                android:ems="5"
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:textColorHint="@color/black"
+                android:padding="7dp"
+                android:background="@drawable/square"/>
+            <Spinner
+                android:layout_width="wrap_content"
+                android:layout_height="38dp"
+                android:id="@+id/month"
+                android:spinnerMode="dialog"
+                android:layout_toRightOf="@id/year"
+                android:layout_marginLeft="20dp"
+                android:padding="7dp"
+                android:background="@drawable/square" />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/search"
+                android:background="@drawable/ic_search_black_24dp"
+                android:layout_toRightOf="@id/month"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:padding="7dp"/>
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/recycleview"
+            android:layout_below="@+id/cardview">
+        </android.support.v7.widget.RecyclerView>
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/blue"
+        android:text="Submit"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="18dp"
+        android:visibility="gone"
+        android:textStyle="bold" />
+
+</RelativeLayout>

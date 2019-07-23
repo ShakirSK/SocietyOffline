@@ -1,0 +1,76 @@
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15dp"
+    android:gravity="center"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <TextView
+        android:id="@+id/info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter amount"
+        android:textColor="#000000"/>
+
+    <LinearLayout
+        android:layout_marginTop="25dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+        <EditText
+            android:id="@+id/edittext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Preference"
+            android:id="@+id/textView3"
+            android:layout_below="@+id/radioGroup_character"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="10dp" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/textView3"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal"
+            android:id="@+id/radioGroupPreference">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Greater than equal to"
+                android:id="@+id/radioButton_greaterthan"
+                android:checked="false" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Equal to"
+                android:id="@+id/radioButton_equalto"
+                android:layout_marginLeft="20dp"
+                android:checked="true" />
+
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/submit"
+            android:layout_marginTop="15dp"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Submit"
+            android:layout_centerInParent="true"/>
+        />
+
+    </LinearLayout>
+
+
+</LinearLayout>

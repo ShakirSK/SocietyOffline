@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:cardBackgroundColor="@color/white">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="110dp"
+                android:background="@color/colorPrimary">
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rprofimglay"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="50dp">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/profile"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:background="@drawable/ic_person_black_24dp"/>
+
+                <android.support.design.widget.FloatingActionButton
+                    android:id="@+id/uploadimg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/ic_edit_black_24dp"
+                    app:backgroundTint="@color/colorPrimary"
+                    app:fabSize="mini"
+                    app:rippleColor="@color/white" />
+            </RelativeLayout>
+
+
+            <TextView
+                android:id="@+id/fullname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rprofimglay"
+                android:text=""
+                android:textSize="18dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="32dp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/editprof"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rprofimglay"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/ic_edit_black_24dp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/fullname"
+                android:layout_marginTop="4dp"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/emailicon"
+                android:background="@drawable/ic_email_black_24dp"/>
+
+
+            <TextView
+                android:id="@+id/email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/fullname"
+                android:textSize="18dp"
+                android:layout_toRightOf="@+id/emailicon"
+                android:layout_marginTop="4dp"
+                android:layout_marginLeft="5dp"/>
+
+            <ImageView
+                android:id="@+id/phn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/email"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                android:src="@drawable/ic_phone_black_24dp" />
+
+            <TextView
+                android:id="@+id/mobile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/email"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@+id/phn"
+                android:text=""
+                android:textSize="18dp" />
+
+            <ImageView
+                android:id="@+id/building"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/phn"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="15dp"
+                android:src="@drawable/ic_home_black_24dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="" />
+
+            <TextView
+                android:id="@+id/buildingno"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/mobile"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@+id/building"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/flatno"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/mobile"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@+id/buildingno"
+                android:textSize="18dp" />
+
+
+            <TextView
+                android:id="@+id/flatstatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/dateofjoining"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@+id/building"
+                android:textColor="@color/green"
+                android:textSize="18dp"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/doj"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/buildingno"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="10dp"
+                android:visibility="gone"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/ic_date_range_black_24dp" />
+
+            <TextView
+                android:id="@+id/dateofjoining"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/buildingno"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="5dp"
+                android:visibility="gone"
+                android:layout_marginTop="20dp"
+                android:layout_toRightOf="@+id/building"
+                android:text="yyyy-mm-dd"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/societyaddress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/dateofjoining"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="9dp"
+                android:text="Society Address :"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/societyname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/societyaddress"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@id/loc"
+                android:text=""
+                android:textSize="18dp" />
+
+            <ImageView
+                android:id="@+id/loc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/societyaddress"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/ic_location_on_black_24dp" />
+
+            <TextView
+                android:id="@+id/location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/societyname"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="6dp"
+                android:text=""
+                android:textSize="18dp" />
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+</RelativeLayout>

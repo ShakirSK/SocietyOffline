@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+
+    <TextView
+        android:id="@+id/collection"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Collection Report"
+        android:padding="10dp"
+        android:background="@color/colorPrimary"
+        android:textColor="@color/white"
+        android:textSize="18dp"/>
+
+        <TextView
+        android:id="@+id/society"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Society ledger"
+        android:textColor="@color/white"
+        android:background="#FF99CAE1"
+        android:padding="10dp"
+        android:layout_below="@+id/collection"
+        android:layout_marginTop="8dp"
+        android:textSize="18dp"/>
+
+        <TextView
+            android:id="@+id/user"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="User Report"
+            android:textColor="@color/white"
+            android:background="#c7e8f7"
+            android:padding="10dp"
+            android:layout_below="@+id/society"
+            android:layout_marginTop="8dp"
+            android:textSize="18dp"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

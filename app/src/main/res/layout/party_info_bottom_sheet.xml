@@ -1,0 +1,258 @@
+<LinearLayout android:id="@+id/LIone"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_alignParentStart="true"
+    android:layout_alignParentTop="true"
+    android:orientation="vertical"
+    android:layout_below="@+id/header"
+    android:weightSum="3"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#0186DB"
+        android:gravity="center"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:orientation="horizontal">
+    <TextView
+        android:id="@+id/partyusername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_scrollFlags="scroll|enterAlways|snap"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:text="SPECIFICATIONS"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="right">
+
+        <ImageView
+            android:id="@+id/shareicon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/ic_share_black_24dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!--Group-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:orientation="horizontal">
+
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_margin="15dp"
+            android:src="@drawable/cv"
+            />
+
+
+        <LinearLayout
+            android:id="@+id/layout_item_desc"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/brand"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Group"
+                android:textColor="#a5564a4a"
+                android:textSize="13dp"
+                android:layout_marginLeft="5dp"
+   />
+
+            <EditText
+                android:id="@+id/groupname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:textSize="17sp"
+                android:textColor="#484444"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <!--mobilenumber-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:orientation="horizontal">
+
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_margin="15dp"
+            android:src="@drawable/phoneno"
+            />
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Mobile"
+                android:textColor="#a5564a4a"
+                android:textSize="13dp"
+                android:layout_marginLeft="5dp"
+                />
+
+            <EditText
+                android:id="@+id/mobilenumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:textColor="#484444"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <!--Address-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:orientation="horizontal">
+
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_margin="15dp"
+            android:src="@drawable/address"
+            />
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Address"
+                android:textSize="13dp"
+                android:textColor="#a5564a4a"
+                android:layout_marginLeft="5dp"
+                />
+
+            <EditText
+                android:id="@+id/Address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:textColor="#484444" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <!--period-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:orientation="horizontal">
+
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_margin="15dp"
+            android:src="@drawable/credit"
+            />
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Credit Period"
+                android:textColor="#a5564a4a"
+                android:textSize="13dp"
+                android:layout_marginLeft="5dp"
+                />
+
+            <EditText
+                android:id="@+id/period"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#484444"
+                android:layout_marginRight="10dp"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <!--limit-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:orientation="horizontal">
+
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_margin="15dp"
+            android:src="@drawable/credit"
+            />
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Credit Limit"
+                android:textColor="#a5564a4a"
+                android:layout_marginLeft="5dp"
+                android:textSize="13dp"
+                />
+
+            <EditText
+                android:id="@+id/limit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:textColor="#484444"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+  <!--  <View android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#E0E0E0"
+        android:layout_marginTop="8dp"/>-->
+
+
+</LinearLayout>

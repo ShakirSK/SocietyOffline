@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".maneger.Create_billCharges.BillCharges">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/app"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+        <android.support.v7.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/gradient"
+            android:id="@+id/toolbar">
+        </android.support.v7.widget.Toolbar>
+    </android.support.design.widget.AppBarLayout>
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView"
+        android:layout_below="@id/app">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Due Date : "
+                android:id="@+id/duedate"
+                android:layout_marginLeft="18dp"/>
+                <EditText
+                    android:id="@+id/datea"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:layout_below="@+id/duedate"
+                    android:hint="yyyy-mm-dd"
+                    android:textSize="13dp" />
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/datea">
+                <EditText
+                    android:id="@+id/service"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:hint="Service Charges"
+                    android:textSize="13dp"
+                    android:inputType="number"/>
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/layout2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/layout">
+                <EditText
+                    android:id="@+id/service2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:hint="Cont.Electricity Charges"
+                    android:textSize="13dp"
+                    android:inputType="number"/>
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/layout3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/layout2">
+                <EditText
+                    android:id="@+id/service3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:hint="Cont.Water Charges"
+                    android:textSize="13dp"
+                    android:inputType="number"/>
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/layout4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/layout3">
+                <EditText
+                    android:id="@+id/service4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:hint="Cont. Building Repair Fund"
+                    android:textSize="13dp"
+                    android:inputType="number"/>
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/layout5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/layout4">
+                <EditText
+                    android:id="@+id/service5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:hint="Cont.Sinking Fund"
+                    android:textSize="13dp"
+                    android:inputType="number"/>
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/layout6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/layout5">
+                <EditText
+                    android:id="@+id/service6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:hint="Building Insurance Charges"
+                    android:textSize="13dp"
+                    android:inputType="number"/>
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+            android:id="@+id/layout7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/layout6">
+            <EditText
+                android:id="@+id/service7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:hint="Cable Charges"
+                android:textSize="13dp"
+                android:inputType="number"/>
+        </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/layout8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/layout7">
+                <EditText
+                    android:id="@+id/service8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:hint="Non Occupancy Charges"
+                    android:textSize="13dp"
+                    android:inputType="number"/>
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/layout9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/layout8">
+                <EditText
+                    android:id="@+id/service9"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:hint="Miscellaneous Income"
+                    android:textSize="13dp"
+                    android:inputType="number"/>
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/layoutA"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/layout9">
+                <EditText
+                    android:id="@+id/serviceA"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:hint="Parking Charges"
+                    android:textSize="13dp"
+                    android:inputType="number"/>
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/layoutB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/layoutA">
+                <EditText
+                    android:id="@+id/serviceB"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:hint="Interest on due"
+                    android:textSize="13dp"
+                    android:inputType="number"/>
+            </android.support.design.widget.TextInputLayout>
+                <TextView
+                    android:id="@+id/serviceC"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/layoutB"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="15dp"
+                    android:text="Total:"
+                    android:textSize="20dp"
+                    android:textColor="@color/black"
+                    android:padding="0dp" />
+            <TextView
+                android:id="@+id/total"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:textColor="@color/black"
+                android:text="0000"
+                android:layout_marginRight="10dp"
+                android:layout_toRightOf="@+id/serviceC"
+                android:layout_below="@+id/layoutB"/>
+            <Button
+                android:id="@+id/submitbtn"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/btnheight"
+                android:background="@drawable/sqrbtn"
+                android:layout_below="@+id/serviceC"
+                android:text="Submit"
+                android:textSize="18dp"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:layout_margin="15dp"/>
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

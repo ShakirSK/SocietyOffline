@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardUseCompatPadding="true"
+                app:cardElevation="2dp"
+                app:cardCornerRadius="2dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:id="@+id/partyid"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="Ledger Name:"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/party"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/partyid"
+                        android:text="101 (Manotosh Sarkar)"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/voucherid"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/party"
+                        android:layout_marginTop="2dp"
+                        android:text="Opening Amount:"
+                        android:textSize="15dp"
+                        />
+                    <TextView
+                        android:id="@+id/voucher"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/party"
+                        android:layout_toRightOf="@+id/voucherid"
+                        android:text="0.00"
+                        android:textSize="15dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="2dp"/>
+
+
+                    <TextView
+                        android:id="@+id/trantypeid"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/voucher"
+                        android:layout_marginTop="3dp"
+                        android:text="Credit Amount:"
+                        android:textSize="15dp"
+                         />
+
+                    <TextView
+                        android:id="@+id/trantype"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/voucher"
+                        android:layout_toRightOf="@+id/trantypeid"
+                        android:text="5000.00"
+                        android:layout_marginTop="3dp"
+                        android:layout_marginLeft="5dp"
+                        android:textSize="15dp"/>
+
+                    <TextView
+                        android:id="@+id/vouchernoid"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/trantype"
+                        android:layout_marginTop="3dp"
+                        android:text="Debit Amount:"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/voucherno"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/trantype"
+                        android:layout_toRightOf="@+id/vouchernoid"
+                        android:text="-6991.00"
+                        android:layout_marginTop="3dp"
+                        android:textSize="15dp"
+                        android:layout_marginLeft="5dp"/>
+
+                    <TextView
+                        android:id="@+id/dateid"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/voucherno"
+                        android:layout_marginTop="3dp"
+                        android:text="Closing Amount:"
+                        android:textSize="15dp"/>
+
+                    <TextView
+                        android:id="@+id/date"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/voucherno"
+                        android:text="-1991.00"
+                        android:layout_marginTop="3dp"
+                        android:layout_toRightOf="@+id/dateid"
+                        android:layout_marginLeft="5dp"
+                        android:textSize="15dp"/>
+
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+</RelativeLayout>

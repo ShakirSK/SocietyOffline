@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".maneger.reports.PaymentModeLedger">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/app"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+        <android.support.v7.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/gradient"
+            android:id="@+id/toolbar">
+        </android.support.v7.widget.Toolbar>
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/cardview"
+        app:cardElevation="4dp"
+        android:layout_marginTop="5dp"
+        app:cardUseCompatPadding="true"
+        android:layout_below="@id/app">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/app"
+            android:id="@+id/relative"
+            android:layout_marginTop="10dp"
+            android:background="@color/white"
+            android:padding="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/amount"
+                android:text="Amount 2000"
+                android:layout_marginLeft="10dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/from"
+                android:text="From : "
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="3dp"
+                android:layout_below="@+id/amount" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/lucky"
+                android:layout_below="@+id/amount"
+                android:layout_toRightOf="@+id/from"
+                android:layout_marginTop="3dp"
+                android:text="Lucky Carlo"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/payment"
+                android:text="Payment Mode : "
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="3dp"
+                android:layout_below="@+id/from" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/mode"
+                android:layout_below="@+id/payment"
+                android:layout_marginTop="3dp"
+                android:layout_marginLeft="10dp"
+                android:text="Online/Cash/Cheque" />
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/cardview2"
+        app:cardElevation="4dp"
+        android:layout_marginTop="5dp"
+        app:cardUseCompatPadding="true"
+        android:layout_below="@id/cardview">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/app"
+            android:id="@+id/relative2"
+            android:layout_marginTop="10dp"
+            android:background="@color/white"
+            android:padding="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/amount2"
+                android:text="Amount 2000"
+                android:layout_marginLeft="10dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/from2"
+                android:text="From : "
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="3dp"
+                android:layout_below="@+id/amount2" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/lucky2"
+                android:layout_below="@+id/amount2"
+                android:layout_toRightOf="@+id/from2"
+                android:layout_marginTop="3dp"
+                android:text="Lucky Carlo"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/payment2"
+                android:text="Payment Mode : "
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="3dp"
+                android:layout_below="@+id/from2" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/mode2"
+                android:layout_below="@+id/payment2"
+                android:layout_marginTop="3dp"
+                android:layout_marginLeft="10dp"
+                android:text="Online/Cash/Cheque" />
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>

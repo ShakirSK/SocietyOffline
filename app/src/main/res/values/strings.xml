@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Society365</string>
+    <string name="navigation_drawer_close" />
+    <string name="navigation_drawer_open" />
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_manager_main">ManagerMainActivity</string>
+
+    <string name="action_settings">Settings</string>
+
+    <!--permission required-->
+    <string name="STORAGE_access_required">STORAGE access is required.</string>
+</resources>

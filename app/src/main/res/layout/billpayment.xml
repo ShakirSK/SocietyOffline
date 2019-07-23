@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        app:cardCornerRadius="3dp"
+        app:cardElevation="4dp"
+        app:cardUseCompatPadding="true">
+
+        <RelativeLayout
+            android:id="@+id/relative"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="15dp">
+
+         <!--
+            <TextView
+                android:id="@+id/selectdatetxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Select Date"
+                android:textSize="16dp" />
+
+            <EditText
+                android:id="@+id/payment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/selectdatetxt"
+                android:text="YYYY-DD-MM"
+                android:textColor="@color/gray"
+                android:textSize="15dp" />
+-->
+            <TextView
+                android:id="@+id/txtbillid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/payment"
+                android:layout_marginTop="10dp"
+                android:textSize="16dp"
+                android:textColor="@color/black"
+                android:text="Bill ID: 02"
+                 />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/DueDate"
+                android:layout_below="@+id/txtbillid"
+                android:textColor="@color/black"
+                android:textSize="16dp"
+                android:text="Due Date"
+                android:layout_marginTop="10dp"/>
+            <TextView
+                android:layout_marginTop="10dp"
+                android:id="@+id/billamount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bill Amount: 0000"
+                android:textColor="@color/black"
+                android:layout_below="@+id/DueDate"
+                android:textSize="16dp" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/btnheight"
+                android:layout_below="@+id/billamount"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/sqrbtn"
+                android:ems="8"
+                android:text="NEXT"
+                android:id="@+id/paymentgetway"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/billstatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/gray"
+                android:textStyle="bold"
+                android:textSize="16dp"
+                android:text=""
+                android:padding="3dp"/>
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cardview">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:id="@+id/linearlayout"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/linearlayout2"
+            android:padding="5dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Description"
+                android:textStyle="bold"
+                android:padding="2dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Service Charge"
+                android:padding="2dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Electricity charge"
+                android:padding="2dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Water Charges"
+                android:padding="2dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Building Repair Fund"
+                android:padding="2dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sinking Fund"
+                android:padding="2dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Building Insurance Charges"
+                android:padding="2dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cable Charges"
+                android:padding="2dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nonoccupancy Charges"
+                android:padding="2dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Miscellaneous Income"
+                android:padding="2dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Parking Charge"
+                android:padding="2dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Interest On Due"
+                android:padding="2dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total"
+                android:textSize="15dp"
+                android:textColor="@color/gray"
+                android:padding="5dp"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/linearlayout3"
+            android:padding="5dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Subtotal"
+                android:textStyle="bold"
+                android:padding="2dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/ServiceCharge"
+                android:padding="2dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/Electricitycharge"
+                android:padding="2dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/WaterCharges"
+                android:padding="2dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/BuildingRepairFund"
+                android:padding="2dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/SinkingFund"
+                android:padding="2dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/BuildingInsuranceCharges"
+                android:padding="2dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/CableCharges"
+                android:padding="2dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/NonoccupancyCharges"
+                android:padding="2dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/MiscellaneousIncome"
+                android:padding="2dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/ParkingCharge"
+                android:padding="2dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/interestondue"
+                android:padding="2dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/total"
+                android:textSize="15dp"
+                android:textColor="@color/gray"
+                android:padding="5dp"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+    </ScrollView>
+
+
+
+
+</RelativeLayout>

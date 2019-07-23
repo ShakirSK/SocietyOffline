@@ -1,0 +1,960 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DBNavigator.Project.DataEditorManager">
+    <record-view-column-sorting-type value="BY_INDEX" />
+    <value-preview-text-wrapping value="false" />
+    <value-preview-pinned value="false" />
+  </component>
+  <component name="DBNavigator.Project.DataExportManager">
+    <export-instructions>
+      <create-header value="true" />
+      <quote-values-containing-separator value="true" />
+      <quote-all-values value="false" />
+      <value-separator value="" />
+      <file-name value="" />
+      <file-location value="" />
+      <scope value="GLOBAL" />
+      <destination value="FILE" />
+      <format value="EXCEL" />
+      <charset value="windows-1252" />
+    </export-instructions>
+  </component>
+  <component name="DBNavigator.Project.DatabaseBrowserManager">
+    <autoscroll-to-editor value="false" />
+    <autoscroll-from-editor value="true" />
+    <show-object-properties value="true" />
+    <loaded-nodes>
+      <connection connection-id="87bbb1f5-9ada-42d6-a1bc-7279382cbc5b">
+        <schema name="main" object-types="dataset trigger, table, view, index, column, constraint" />
+      </connection>
+      <connection connection-id="cbf64351-2be1-4512-899e-fd0fe236b854">
+        <schema name="main" object-types="dataset trigger, table, view, index, column, constraint" />
+      </connection>
+      <connection connection-id="fd58052f-4949-4aa7-8645-9e8e6cfbb40e">
+        <schema name="main" object-types="dataset trigger, table, view, index, column, constraint" />
+      </connection>
+    </loaded-nodes>
+  </component>
+  <component name="DBNavigator.Project.DatabaseConsoleManager">
+    <connection id="87bbb1f5-9ada-42d6-a1bc-7279382cbc5b">
+      <console name="Connection" type="STANDARD" schema="main" session="Main" />
+    </connection>
+    <connection id="cbf64351-2be1-4512-899e-fd0fe236b854">
+      <console name="Connection 1" type="STANDARD" schema="main" session="Main" />
+    </connection>
+    <connection id="fd58052f-4949-4aa7-8645-9e8e6cfbb40e">
+      <console name="Connection 2" type="STANDARD" schema="main" session="Main" />
+    </connection>
+  </component>
+  <component name="DBNavigator.Project.DatabaseFileManager">
+    <open-files>
+      <object connection-id="87bbb1f5-9ada-42d6-a1bc-7279382cbc5b" object-ref="schemas/main/tables/daybook_details" />
+    </open-files>
+  </component>
+  <component name="DBNavigator.Project.DatabaseSessionManager">
+    <connection id="87bbb1f5-9ada-42d6-a1bc-7279382cbc5b" />
+    <connection id="cbf64351-2be1-4512-899e-fd0fe236b854" />
+    <connection id="fd58052f-4949-4aa7-8645-9e8e6cfbb40e" />
+  </component>
+  <component name="DBNavigator.Project.DatasetFilterManager">
+    <filter-actions connection-id="cbf64351-2be1-4512-899e-fd0fe236b854" dataset="main.daybook_details" active-filter-id="EMPTY_FILTER" />
+    <filter-actions connection-id="cbf64351-2be1-4512-899e-fd0fe236b854" dataset="main.ledgers" active-filter-id="EMPTY_FILTER" />
+    <filter-actions connection-id="cbf64351-2be1-4512-899e-fd0fe236b854" dataset="main.android_metadata" active-filter-id="EMPTY_FILTER" />
+    <filter-actions connection-id="fd58052f-4949-4aa7-8645-9e8e6cfbb40e" dataset="main.daybook_details" active-filter-id="EMPTY_FILTER" />
+    <filter-actions connection-id="fd58052f-4949-4aa7-8645-9e8e6cfbb40e" dataset="main.ledgers" active-filter-id="EMPTY_FILTER" />
+    <filter-actions connection-id="fd58052f-4949-4aa7-8645-9e8e6cfbb40e" dataset="main.oc_user" active-filter-id="EMPTY_FILTER" />
+    <filter-actions connection-id="87bbb1f5-9ada-42d6-a1bc-7279382cbc5b" dataset="main.daybook_details" active-filter-id="21e29059-7174-4c35-9a42-24de188937a9">
+      <filter id="148ed3fe-98f6-4926-902d-cb8d71285fd4" name="Receipt" temporary="false" custom-name="false" type="basic" join-type="AND">
+        <condition column="voucher_type" operator="=" value="Receipt" active="true" />
+      </filter>
+      <filter id="eec43886-8945-486f-af79-eed0030fde0f" name="Rajendra K Shirgaonkar (B-301)" temporary="false" custom-name="false" type="basic" join-type="AND">
+        <condition column="party_name" operator="=" value="Rajendra K Shirgaonkar (B-301)" active="true" />
+      </filter>
+      <filter id="a942ac23-5bba-4462-a54b-654d58daecea" name="Abhay Parbale &amp; 900" temporary="false" custom-name="false" type="basic" join-type="AND">
+        <condition column="party_name" operator="=" value="Abhay Parbale" active="true" />
+        <condition column="amount" operator="&gt;=" value="900" active="true" />
+      </filter>
+      <filter id="21e29059-7174-4c35-9a42-24de188937a9" name="Payment" temporary="false" custom-name="false" type="basic" join-type="AND">
+        <condition column="voucher_type" operator="=" value="Payment" active="true" />
+      </filter>
+      <filter id="f11ec2b1-5217-40d3-b3ca-f08d9e99869a" name="Contra &amp; T.J.S.B A/c &amp; Credit" temporary="false" custom-name="false" type="basic" join-type="AND">
+        <condition column="voucher_type" operator="=" value="Contra" active="true" />
+        <condition column="party_name" operator="=" value="T.J.S.B A/c" active="true" />
+        <condition column="dr_cr" operator="=" value="Credit" active="true" />
+      </filter>
+      <filter id="d27ab368-0fd5-417f-9799-0f37f093bd04" name="Contra" temporary="false" custom-name="false" type="basic" join-type="AND">
+        <condition column="voucher_type" operator="=" value="Contra" active="true" />
+      </filter>
+      <filter id="88866867-8566-44bf-80dc-84da864e7053" name="Bill" temporary="false" custom-name="false" type="basic" join-type="AND">
+        <condition column="voucher_type" operator="=" value="Bill" active="true" />
+      </filter>
+      <filter id="24f1b463-ecbc-4a48-9f95-d6fda56b5f9d" name="Cash &amp; bill" temporary="false" custom-name="false" type="basic" join-type="AND">
+        <condition column="ledger_name" operator="=" value="Cash" active="true" />
+        <condition column="voucher_type" operator="=" value="bill" active="true" />
+      </filter>
+      <filter id="3e1c566d-6132-4881-b42e-610ea2c60d54" name="Journal" temporary="false" custom-name="false" type="basic" join-type="AND">
+        <condition column="voucher_type" operator="=" value="Journal" active="true" />
+      </filter>
+      <filter id="1faeab5f-c6ee-48e1-b185-58df102fbf41" name="88.5" temporary="false" custom-name="false" type="basic" join-type="AND">
+        <condition column="amount" operator="=" value="88.5" active="true" />
+      </filter>
+      <filter id="7be39f5d-00b1-49c8-a222-eddc17dbf866" name="Neha Tamhane &amp; Payment" temporary="false" custom-name="false" type="basic" join-type="AND">
+        <condition column="party_name" operator="=" value="Neha Tamhane" active="true" />
+        <condition column="voucher_type" operator="=" value="Payment" active="true" />
+      </filter>
+      <filter id="67def1d8-c7dd-44f1-8402-568e8b9b0325" name="Cheif Promoter A/c" temporary="false" custom-name="false" type="basic" join-type="AND">
+        <condition column="ledger_name" operator="=" value="Cheif Promoter A/c" active="true" />
+      </filter>
+      <filter id="5758d55d-e386-47f7-ab93-401b5e3a9ba2" name="Abhijeet Tondwalkar &amp; Bill &amp; 724" temporary="false" custom-name="false" type="basic" join-type="AND">
+        <condition column="party_name" operator="=" value="Abhijeet Tondwalkar" active="true" />
+        <condition column="voucher_type" operator="=" value="Bill" active="true" />
+        <condition column="voucher_number" operator="=" value="724" active="true" />
+      </filter>
+      <filter id="be0d715f-31be-495b-b640-c6300af73bca" name="Ashok Shrimali ( C-401 )" temporary="false" custom-name="false" type="basic" join-type="AND">
+        <condition column="ledger_name" operator="=" value="Ashok Shrimali ( C-401 )" active="true" />
+      </filter>
+      <filter id="8abfbd24-3b0e-48cf-b398-338554dce0b0" name="Transfer Premium" temporary="false" custom-name="false" type="basic" join-type="AND">
+        <condition column="ledger_name" operator="=" value="Transfer Premium" active="true" />
+      </filter>
+      <filter id="07c92247-fdff-4769-add4-a424071f6195" name="Rahul Deshumukh" temporary="false" custom-name="false" type="basic" join-type="AND">
+        <condition column="party_name" operator="=" value="Rahul Deshumukh" active="true" />
+      </filter>
+      <filter id="4ea2586f-fbec-4873-9bfb-f2ce34b4cec8" name="T.J.S.B A/c" temporary="false" custom-name="false" type="basic" join-type="AND">
+        <condition column="ledger_name" operator="=" value="T.J.S.B A/c" active="true" />
+      </filter>
+      <filter id="2b3a778c-c5e9-4287-8f33-d58f6f69f86e" name="Payment" temporary="false" custom-name="false" type="basic" join-type="AND">
+        <condition column="voucher_type" operator="=" value="Payment" active="true" />
+      </filter>
+      <filter id="ed64ef28-3639-4a8f-af5b-1b09d56915bb" name="Non Occupancy Charges" temporary="false" custom-name="false" type="basic" join-type="AND">
+        <condition column="ledger_name" operator="=" value="Non Occupancy Charges" active="true" />
+      </filter>
+      <filter id="890537c4-646f-4a2f-8b32-5dd995810abc" name="Interest on Defaulted Dues &amp; 3" temporary="false" custom-name="false" type="basic" join-type="AND">
+        <condition column="ledger_name" operator="=" value="Interest on Defaulted Dues" active="true" />
+        <condition column="voucher_number" operator="=" value="3" active="true" />
+      </filter>
+      <filter id="d9e55767-3e57-4245-973f-77f26bf4b3bb" name="Sanjesh Patkar ( 701)" temporary="false" custom-name="false" type="basic" join-type="AND">
+        <condition column="party_name" operator="=" value="Sanjesh Patkar ( 701)" active="true" />
+      </filter>
+      <filter id="afeae5be-9174-411c-bf64-69241ae67fb2" name="Jignesh Shah " temporary="false" custom-name="false" type="basic" join-type="AND">
+        <condition column="party_name" operator="=" value="Jignesh Shah " active="true" />
+      </filter>
+      <filter id="1f855942-0e8a-465a-9d95-df484e8179b9" name="TDCC Bank A/c" temporary="false" custom-name="false" type="basic" join-type="AND">
+        <condition column="party_name" operator="=" value="TDCC Bank A/c" active="true" />
+      </filter>
+      <filter id="2b4985b2-a076-422e-bcec-b9e2376b4866" name="Bhopi Satish (B-101)" temporary="false" custom-name="false" type="basic" join-type="AND">
+        <condition column="party_name" operator="=" value="Bhopi Satish (B-101)" active="true" />
+      </filter>
+    </filter-actions>
+    <filter-actions connection-id="87bbb1f5-9ada-42d6-a1bc-7279382cbc5b" dataset="main.oc_user_company" active-filter-id="EMPTY_FILTER" />
+    <filter-actions connection-id="87bbb1f5-9ada-42d6-a1bc-7279382cbc5b" dataset="main.trial_balance_ledger" active-filter-id="EMPTY_FILTER">
+      <filter id="4f1b7838-a6a3-4b4a-b090-cafd63da6e94" name="Gaurav K. Ghorpade" temporary="false" custom-name="false" type="basic" join-type="AND">
+        <condition column="ledger_name" operator="=" value="Gaurav K. Ghorpade" active="true" />
+      </filter>
+      <filter id="c043a0f0-05af-4ece-b5ae-f7668a75960a" name="Shreepal Housing " temporary="false" custom-name="false" type="basic" join-type="AND">
+        <condition column="ledger_name" operator="=" value="Shreepal Housing " active="true" />
+      </filter>
+      <filter id="24de7d3b-1373-4d3c-a9e3-b8d2d7923e06" name="T.J.S.B A/c" temporary="false" custom-name="false" type="basic" join-type="AND">
+        <condition column="ledger_name" operator="=" value="T.J.S.B A/c" active="true" />
+      </filter>
+      <filter id="4c75a5f0-1bd3-4b53-824d-62ca4ac9954d" name="Neha Tamhane" temporary="false" custom-name="false" type="basic" join-type="AND">
+        <condition column="ledger_name" operator="=" value="Neha Tamhane" active="true" />
+      </filter>
+      <filter id="663c228a-2245-4710-8b38-94ee7968b86e" name="B-301" temporary="false" custom-name="false" type="basic" join-type="AND">
+        <condition column="ledger_name" operator="=" value="B-301" active="true" />
+      </filter>
+      <filter id="cc53a696-57ab-4ebe-a6b4-476087e80ab3" name="C-704" temporary="false" custom-name="false" type="basic" join-type="AND">
+        <condition column="ledger_name" operator="=" value="C-704" active="true" />
+      </filter>
+      <filter id="d76619f5-5492-472f-9410-ff32654bea24" name=" B-106" temporary="false" custom-name="false" type="basic" join-type="AND">
+        <condition column="ledger_name" operator="=" value=" B-106" active="true" />
+      </filter>
+      <filter id="8ddcf8f1-c2ed-453c-84ee-c9c674f5d499" name=" C-401 " temporary="false" custom-name="false" type="basic" join-type="AND">
+        <condition column="ledger_name" operator="=" value=" C-401 " active="true" />
+      </filter>
+      <filter id="4ff72c59-cf2f-4c08-890d-28a3452ec035" name="2018" temporary="false" custom-name="false" type="basic" join-type="AND">
+        <condition column="year" operator="=" value="2018" active="true" />
+      </filter>
+      <filter id="71b966f2-1cf6-4b28-aced-27173c2fff65" name="C-605" temporary="false" custom-name="false" type="basic" join-type="AND">
+        <condition column="closing_amount" operator="=" value="C-605" active="true" />
+      </filter>
+      <filter id="bedd3b43-dc91-4eac-9343-6df1ea9f9cad" name="B-003" temporary="false" custom-name="false" type="basic" join-type="AND">
+        <condition column="ledger_name" operator="=" value="B-003" active="true" />
+      </filter>
+      <filter id="07a4f986-5e71-46bc-a0d8-bb87c325c2fe" name="Loans (Liability)" temporary="false" custom-name="false" type="basic" join-type="AND">
+        <condition column="ledger_name" operator="=" value="Loans (Liability)" active="true" />
+      </filter>
+      <filter id="9780ca4c-2f5c-4d6e-a88e-e0979424608d" name="Bank Interest" temporary="false" custom-name="false" type="basic" join-type="AND">
+        <condition column="ledger_name" operator="=" value="Bank Interest" active="true" />
+      </filter>
+      <filter id="5587886c-c1dc-48ee-9e21-eb76029c07a3" name="Gopal Height C Wing" temporary="false" custom-name="false" type="basic" join-type="AND">
+        <condition column="closing_amount" operator="=" value="Gopal Height C Wing" active="true" />
+      </filter>
+      <filter id="7da2e58a-9683-4351-8b17-09638556db20" name="Gopal Height C Wing" temporary="false" custom-name="false" type="basic" join-type="AND">
+        <condition column="ledger_name" operator="=" value="Gopal Height C Wing" active="true" />
+      </filter>
+      <filter id="aa658a81-7d95-4d14-8747-d495381e484c" name="-53888" temporary="false" custom-name="false" type="basic" join-type="AND">
+        <condition column="closing_amount" operator="=" value="-53888" active="true" />
+      </filter>
+      <filter id="6b429189-cabe-4052-aacb-39112b639d8c" name="A-702" temporary="false" custom-name="false" type="basic" join-type="AND">
+        <condition column="ledger_name" operator="=" value="A-702" active="true" />
+      </filter>
+      <filter id="e00aeb45-6ba7-4a10-a7ce-b0023ff14fb5" name="A/c Writing Charges" temporary="false" custom-name="false" type="basic" join-type="AND">
+        <condition column="ledger_name" operator="=" value="A/c Writing Charges" active="true" />
+      </filter>
+    </filter-actions>
+    <filter-actions connection-id="87bbb1f5-9ada-42d6-a1bc-7279382cbc5b" dataset="main.ledgers" active-filter-id="EMPTY_FILTER">
+      <filter id="831cf593-d8da-4d00-8373-b5932d8c7d73" name="Ashok Shrimali " temporary="false" custom-name="false" type="basic" join-type="AND">
+        <condition column="ledger_name" operator="=" value="Ashok Shrimali " active="true" />
+      </filter>
+      <filter id="ea791de7-3498-4819-8956-b9897ec12d9c" name="Rajendra K Shirgaonkar " temporary="false" custom-name="false" type="basic" join-type="AND">
+        <condition column="ledger_name" operator="=" value="Rajendra K Shirgaonkar " active="true" />
+      </filter>
+      <filter id="40b85ba9-ec1b-47c7-932a-9b0a5189e5fd" name="Ashwin Shetty" temporary="false" custom-name="false" type="basic" join-type="AND">
+        <condition column="ledger_name" operator="=" value="Ashwin Shetty" active="true" />
+      </filter>
+      <filter id="1d91d7a2-835d-47ac-867d-cf3526909112" name="Neha Tamhane" temporary="false" custom-name="false" type="basic" join-type="AND">
+        <condition column="ledger_name" operator="=" value="Neha Tamhane" active="true" />
+      </filter>
+      <filter id="b9bcdeff-01c6-463e-80ad-ddcbab2f5262" name="Filter" temporary="false" custom-name="false" type="basic" join-type="AND">
+        <condition column="company_id" operator="=" value="" active="true" />
+      </filter>
+      <filter id="979b04c9-8750-4ade-a274-6264bd56c4eb" name="Jignesh Shah A-103" temporary="false" custom-name="false" type="basic" join-type="AND">
+        <condition column="ledger_name" operator="=" value="Jignesh Shah A-103" active="true" />
+      </filter>
+      <filter id="6eda73a6-c6a7-46da-aef5-30e10ec478a3" name="Filter 2" temporary="false" custom-name="false" type="basic" join-type="AND">
+        <condition column="company_id" operator="=" value="" active="true" />
+      </filter>
+      <filter id="0247b5f4-0268-4476-95b2-50e8fbbd8eaf" name="Sanjesh Patkar" temporary="false" custom-name="false" type="basic" join-type="AND">
+        <condition column="ledger_name" operator="=" value="Sanjesh Patkar" active="true" />
+      </filter>
+      <filter id="70394d1f-eb79-4aa8-a996-f11f9f63dbf5" name="Ajay Amarpal Singh " temporary="false" custom-name="false" type="basic" join-type="AND">
+        <condition column="ledger_name" operator="=" value="Ajay Amarpal Singh " active="true" />
+      </filter>
+      <filter id="0aed2bda-2d2f-4b58-9448-9791ebe31f6e" name="Ninad Chavan " temporary="false" custom-name="false" type="basic" join-type="AND">
+        <condition column="ledger_name" operator="=" value="Ninad Chavan " active="true" />
+      </filter>
+      <filter id="f6172404-0900-42fb-8729-1eae1af3e61e" name="Shreepal Housing " temporary="false" custom-name="false" type="basic" join-type="AND">
+        <condition column="ledger_name" operator="=" value="Shreepal Housing " active="true" />
+      </filter>
+      <filter id="337e4852-906d-42ee-a5e3-b77e96784921" name="Rahul Deshumukh" temporary="false" custom-name="false" type="basic" join-type="AND">
+        <condition column="ledger_name" operator="=" value="Rahul Deshumukh" active="true" />
+      </filter>
+      <filter id="03ca4d4a-e9ed-45d0-aff9-dafca0e97127" name="Bank Accounts" temporary="false" custom-name="false" type="basic" join-type="AND">
+        <condition column="parent_name_2" operator="=" value="Bank Accounts" active="true" />
+      </filter>
+      <filter id="1e7989f6-20a3-4633-88d2-380fb57b3811" name="Transfer Premium" temporary="false" custom-name="false" type="basic" join-type="AND">
+        <condition column="ledger_name" operator="=" value="Transfer Premium" active="true" />
+      </filter>
+      <filter id="c62e37ce-bbe6-44f4-a8b4-b791d18c0297" name="Indirect Expenses" temporary="false" custom-name="false" type="basic" join-type="AND">
+        <condition column="parent_name_2" operator="=" value="Indirect Expenses" active="true" />
+      </filter>
+      <filter id="6aace4be-bedf-46a5-ab43-894bc4a49a5f" name="Bhopi Satish " temporary="false" custom-name="false" type="basic" join-type="AND">
+        <condition column="ledger_name" operator="=" value="Bhopi Satish " active="true" />
+      </filter>
+    </filter-actions>
+    <filter-actions connection-id="87bbb1f5-9ada-42d6-a1bc-7279382cbc5b" dataset="main.trial_balance_accounts" active-filter-id="043fb4cb-11f0-43e3-a4d6-8c7e1b66bfab">
+      <filter id="a137c115-2abb-40a4-b40e-fe32da98fcd1" name="Loans (Liability)" temporary="false" custom-name="false" type="basic" join-type="AND">
+        <condition column="account_name" operator="=" value="Loans (Liability)" active="true" />
+      </filter>
+      <filter id="a504f1ba-9564-40cf-91d3-0e39afd3d351" name="Indirect Incomes" temporary="false" custom-name="false" type="basic" join-type="AND">
+        <condition column="account_name" operator="=" value="Indirect Incomes" active="true" />
+      </filter>
+      <filter id="049be9bc-3eb9-4023-8d03-6a89976e5f55" name="Indirect Expenses" temporary="false" custom-name="false" type="basic" join-type="AND">
+        <condition column="account_name" operator="=" value="Indirect Expenses" active="true" />
+      </filter>
+      <filter id="043fb4cb-11f0-43e3-a4d6-8c7e1b66bfab" name="Cash" temporary="false" custom-name="false" type="basic" join-type="AND">
+        <condition column="account_name" operator="=" value="Cash" active="true" />
+      </filter>
+    </filter-actions>
+    <filter-actions connection-id="87bbb1f5-9ada-42d6-a1bc-7279382cbc5b" dataset="main.oc_user" active-filter-id="EMPTY_FILTER" />
+  </component>
+  <component name="DBNavigator.Project.EditorStateManager">
+    <last-used-providers>
+      <object-type object-type="TABLE" editor-provider="DATA" />
+    </last-used-providers>
+  </component>
+  <component name="DBNavigator.Project.MethodExecutionManager">
+    <method-browser />
+    <execution-history>
+      <group-entries value="true" />
+      <execution-inputs />
+    </execution-history>
+    <argument-values-cache />
+  </component>
+  <component name="DBNavigator.Project.ObjectDependencyManager">
+    <last-used-dependency-type value="INCOMING" />
+  </component>
+  <component name="DBNavigator.Project.ObjectQuickFilterManager">
+    <last-used-operator value="EQUAL" />
+    <filters />
+  </component>
+  <component name="DBNavigator.Project.ScriptExecutionManager" clear-outputs="true">
+    <recently-used-interfaces />
+  </component>
+  <component name="DBNavigator.Project.Settings">
+    <connections>
+      <connection id="87bbb1f5-9ada-42d6-a1bc-7279382cbc5b" active="true">
+        <database>
+          <name value="Connection" />
+          <description value="" />
+          <database-type value="SQLITE" />
+          <config-type value="BASIC" />
+          <database-version value="3.0" />
+          <driver-source value="BUILTIN" />
+          <driver-library value="" />
+          <driver value="" />
+          <url-type value="FILE" />
+          <host value="" />
+          <port value="" />
+          <database value="" />
+          <files>
+            <file path="C:\Users\Anas\Documents\AndroidStudio\DeviceExplorer\xiaomi-redmi_note_4-33812c519904\sdcard\oneTestsoc365.db" schema="main" />
+          </files>
+          <os-authentication value="false" />
+          <empty-authentication value="false" />
+          <user value="" />
+          <deprecated-pwd value="" />
+        </database>
+        <properties>
+          <auto-commit value="false" />
+        </properties>
+        <ssh-settings>
+          <active value="false" />
+          <proxy-host value="" />
+          <proxy-port value="22" />
+          <proxy-user value="" />
+          <deprecated-proxy-pwd value="" />
+          <auth-type value="PASSWORD" />
+          <key-file value="" />
+          <key-passphrase value="" />
+        </ssh-settings>
+        <ssl-settings>
+          <active value="false" />
+          <certificate-authority-file value="" />
+          <client-certificate-file value="" />
+          <client-key-file value="" />
+        </ssl-settings>
+        <details>
+          <charset value="UTF-8" />
+          <session-management value="true" />
+          <ddl-file-binding value="true" />
+          <database-logging value="false" />
+          <connect-automatically value="true" />
+          <restore-workspace value="true" />
+          <restore-workspace-deep value="true" />
+          <environment-type value="default" />
+          <idle-time-to-disconnect value="30" />
+          <idle-time-to-disconnect-pool value="5" />
+          <credential-expiry-time value="10" />
+          <max-connection-pool-size value="7" />
+          <alternative-statement-delimiter value="" />
+        </details>
+        <object-filters hide-empty-schemas="false">
+          <object-type-filter use-master-settings="true">
+            <object-type name="SCHEMA" enabled="true" />
+            <object-type name="USER" enabled="true" />
+            <object-type name="ROLE" enabled="true" />
+            <object-type name="PRIVILEGE" enabled="true" />
+            <object-type name="CHARSET" enabled="true" />
+            <object-type name="TABLE" enabled="true" />
+            <object-type name="VIEW" enabled="true" />
+            <object-type name="MATERIALIZED_VIEW" enabled="true" />
+            <object-type name="NESTED_TABLE" enabled="true" />
+            <object-type name="COLUMN" enabled="true" />
+            <object-type name="INDEX" enabled="true" />
+            <object-type name="CONSTRAINT" enabled="true" />
+            <object-type name="DATASET_TRIGGER" enabled="true" />
+            <object-type name="DATABASE_TRIGGER" enabled="true" />
+            <object-type name="SYNONYM" enabled="true" />
+            <object-type name="SEQUENCE" enabled="true" />
+            <object-type name="PROCEDURE" enabled="true" />
+            <object-type name="FUNCTION" enabled="true" />
+            <object-type name="PACKAGE" enabled="true" />
+            <object-type name="TYPE" enabled="true" />
+            <object-type name="TYPE_ATTRIBUTE" enabled="true" />
+            <object-type name="ARGUMENT" enabled="true" />
+            <object-type name="DIMENSION" enabled="true" />
+            <object-type name="CLUSTER" enabled="true" />
+            <object-type name="DBLINK" enabled="true" />
+          </object-type-filter>
+          <object-name-filters />
+        </object-filters>
+      </connection>
+      <connection id="cbf64351-2be1-4512-899e-fd0fe236b854" active="true">
+        <database>
+          <name value="Connection 1" />
+          <description value="" />
+          <database-type value="SQLITE" />
+          <config-type value="BASIC" />
+          <database-version value="3.0" />
+          <driver-source value="BUILTIN" />
+          <driver-library value="" />
+          <driver value="" />
+          <url-type value="FILE" />
+          <host value="" />
+          <port value="" />
+          <database value="" />
+          <files>
+            <file path="C:\Users\Anas\Documents\AndroidStudio\DeviceExplorer\xiaomi-redmi_note_4-33812c519904\sdcard\Testsoc365newww2.db" schema="main" />
+          </files>
+          <os-authentication value="false" />
+          <empty-authentication value="false" />
+          <user value="" />
+          <deprecated-pwd value="" />
+        </database>
+        <properties>
+          <auto-commit value="false" />
+        </properties>
+        <ssh-settings>
+          <active value="false" />
+          <proxy-host value="" />
+          <proxy-port value="22" />
+          <proxy-user value="" />
+          <deprecated-proxy-pwd value="" />
+          <auth-type value="PASSWORD" />
+          <key-file value="" />
+          <key-passphrase value="" />
+        </ssh-settings>
+        <ssl-settings>
+          <active value="false" />
+          <certificate-authority-file value="" />
+          <client-certificate-file value="" />
+          <client-key-file value="" />
+        </ssl-settings>
+        <details>
+          <charset value="UTF-8" />
+          <session-management value="true" />
+          <ddl-file-binding value="true" />
+          <database-logging value="false" />
+          <connect-automatically value="true" />
+          <restore-workspace value="true" />
+          <restore-workspace-deep value="true" />
+          <environment-type value="default" />
+          <idle-time-to-disconnect value="30" />
+          <idle-time-to-disconnect-pool value="5" />
+          <credential-expiry-time value="10" />
+          <max-connection-pool-size value="7" />
+          <alternative-statement-delimiter value="" />
+        </details>
+        <object-filters hide-empty-schemas="false">
+          <object-type-filter use-master-settings="true">
+            <object-type name="SCHEMA" enabled="true" />
+            <object-type name="USER" enabled="true" />
+            <object-type name="ROLE" enabled="true" />
+            <object-type name="PRIVILEGE" enabled="true" />
+            <object-type name="CHARSET" enabled="true" />
+            <object-type name="TABLE" enabled="true" />
+            <object-type name="VIEW" enabled="true" />
+            <object-type name="MATERIALIZED_VIEW" enabled="true" />
+            <object-type name="NESTED_TABLE" enabled="true" />
+            <object-type name="COLUMN" enabled="true" />
+            <object-type name="INDEX" enabled="true" />
+            <object-type name="CONSTRAINT" enabled="true" />
+            <object-type name="DATASET_TRIGGER" enabled="true" />
+            <object-type name="DATABASE_TRIGGER" enabled="true" />
+            <object-type name="SYNONYM" enabled="true" />
+            <object-type name="SEQUENCE" enabled="true" />
+            <object-type name="PROCEDURE" enabled="true" />
+            <object-type name="FUNCTION" enabled="true" />
+            <object-type name="PACKAGE" enabled="true" />
+            <object-type name="TYPE" enabled="true" />
+            <object-type name="TYPE_ATTRIBUTE" enabled="true" />
+            <object-type name="ARGUMENT" enabled="true" />
+            <object-type name="DIMENSION" enabled="true" />
+            <object-type name="CLUSTER" enabled="true" />
+            <object-type name="DBLINK" enabled="true" />
+          </object-type-filter>
+          <object-name-filters />
+        </object-filters>
+      </connection>
+      <connection id="fd58052f-4949-4aa7-8645-9e8e6cfbb40e" active="true">
+        <database>
+          <name value="Connection 2" />
+          <description value="" />
+          <database-type value="SQLITE" />
+          <config-type value="BASIC" />
+          <database-version value="3.0" />
+          <driver-source value="BUILTIN" />
+          <driver-library value="" />
+          <driver value="" />
+          <url-type value="FILE" />
+          <host value="" />
+          <port value="" />
+          <database value="" />
+          <files>
+            <file path="C:\Users\Anas\Documents\AndroidStudio\DeviceExplorer\xiaomi-redmi_note_4-33812c519904\sdcard\Testsoc365re.db" schema="main" />
+          </files>
+          <os-authentication value="false" />
+          <empty-authentication value="false" />
+          <user value="" />
+          <deprecated-pwd value="" />
+        </database>
+        <properties>
+          <auto-commit value="false" />
+        </properties>
+        <ssh-settings>
+          <active value="false" />
+          <proxy-host value="" />
+          <proxy-port value="22" />
+          <proxy-user value="" />
+          <deprecated-proxy-pwd value="" />
+          <auth-type value="PASSWORD" />
+          <key-file value="" />
+          <key-passphrase value="" />
+        </ssh-settings>
+        <ssl-settings>
+          <active value="false" />
+          <certificate-authority-file value="" />
+          <client-certificate-file value="" />
+          <client-key-file value="" />
+        </ssl-settings>
+        <details>
+          <charset value="UTF-8" />
+          <session-management value="true" />
+          <ddl-file-binding value="true" />
+          <database-logging value="false" />
+          <connect-automatically value="true" />
+          <restore-workspace value="true" />
+          <restore-workspace-deep value="true" />
+          <environment-type value="default" />
+          <idle-time-to-disconnect value="30" />
+          <idle-time-to-disconnect-pool value="5" />
+          <credential-expiry-time value="10" />
+          <max-connection-pool-size value="7" />
+          <alternative-statement-delimiter value="" />
+        </details>
+        <object-filters hide-empty-schemas="false">
+          <object-type-filter use-master-settings="true">
+            <object-type name="SCHEMA" enabled="true" />
+            <object-type name="USER" enabled="true" />
+            <object-type name="ROLE" enabled="true" />
+            <object-type name="PRIVILEGE" enabled="true" />
+            <object-type name="CHARSET" enabled="true" />
+            <object-type name="TABLE" enabled="true" />
+            <object-type name="VIEW" enabled="true" />
+            <object-type name="MATERIALIZED_VIEW" enabled="true" />
+            <object-type name="NESTED_TABLE" enabled="true" />
+            <object-type name="COLUMN" enabled="true" />
+            <object-type name="INDEX" enabled="true" />
+            <object-type name="CONSTRAINT" enabled="true" />
+            <object-type name="DATASET_TRIGGER" enabled="true" />
+            <object-type name="DATABASE_TRIGGER" enabled="true" />
+            <object-type name="SYNONYM" enabled="true" />
+            <object-type name="SEQUENCE" enabled="true" />
+            <object-type name="PROCEDURE" enabled="true" />
+            <object-type name="FUNCTION" enabled="true" />
+            <object-type name="PACKAGE" enabled="true" />
+            <object-type name="TYPE" enabled="true" />
+            <object-type name="TYPE_ATTRIBUTE" enabled="true" />
+            <object-type name="ARGUMENT" enabled="true" />
+            <object-type name="DIMENSION" enabled="true" />
+            <object-type name="CLUSTER" enabled="true" />
+            <object-type name="DBLINK" enabled="true" />
+          </object-type-filter>
+          <object-name-filters />
+        </object-filters>
+      </connection>
+    </connections>
+    <browser-settings>
+      <general>
+        <display-mode value="TABBED" />
+        <navigation-history-size value="100" />
+        <show-object-details value="false" />
+      </general>
+      <filters>
+        <object-type-filter>
+          <object-type name="SCHEMA" enabled="true" />
+          <object-type name="USER" enabled="true" />
+          <object-type name="ROLE" enabled="true" />
+          <object-type name="PRIVILEGE" enabled="true" />
+          <object-type name="CHARSET" enabled="true" />
+          <object-type name="TABLE" enabled="true" />
+          <object-type name="VIEW" enabled="true" />
+          <object-type name="MATERIALIZED_VIEW" enabled="true" />
+          <object-type name="NESTED_TABLE" enabled="true" />
+          <object-type name="COLUMN" enabled="true" />
+          <object-type name="INDEX" enabled="true" />
+          <object-type name="CONSTRAINT" enabled="true" />
+          <object-type name="DATASET_TRIGGER" enabled="true" />
+          <object-type name="DATABASE_TRIGGER" enabled="true" />
+          <object-type name="SYNONYM" enabled="true" />
+          <object-type name="SEQUENCE" enabled="true" />
+          <object-type name="PROCEDURE" enabled="true" />
+          <object-type name="FUNCTION" enabled="true" />
+          <object-type name="PACKAGE" enabled="true" />
+          <object-type name="TYPE" enabled="true" />
+          <object-type name="TYPE_ATTRIBUTE" enabled="true" />
+          <object-type name="ARGUMENT" enabled="true" />
+          <object-type name="DIMENSION" enabled="true" />
+          <object-type name="CLUSTER" enabled="true" />
+          <object-type name="DBLINK" enabled="true" />
+        </object-type-filter>
+      </filters>
+      <sorting>
+        <object-type name="COLUMN" sorting-type="NAME" />
+        <object-type name="FUNCTION" sorting-type="NAME" />
+        <object-type name="PROCEDURE" sorting-type="NAME" />
+        <object-type name="ARGUMENT" sorting-type="POSITION" />
+      </sorting>
+      <default-editors>
+        <object-type name="VIEW" editor-type="SELECTION" />
+        <object-type name="PACKAGE" editor-type="SELECTION" />
+        <object-type name="TYPE" editor-type="SELECTION" />
+      </default-editors>
+    </browser-settings>
+    <navigation-settings>
+      <lookup-filters>
+        <lookup-objects>
+          <object-type name="SCHEMA" enabled="true" />
+          <object-type name="USER" enabled="false" />
+          <object-type name="ROLE" enabled="false" />
+          <object-type name="PRIVILEGE" enabled="false" />
+          <object-type name="CHARSET" enabled="false" />
+          <object-type name="TABLE" enabled="true" />
+          <object-type name="VIEW" enabled="true" />
+          <object-type name="MATERIALIZED VIEW" enabled="true" />
+          <object-type name="NESTED TABLE" enabled="false" />
+          <object-type name="COLUMN" enabled="false" />
+          <object-type name="INDEX" enabled="true" />
+          <object-type name="CONSTRAINT" enabled="true" />
+          <object-type name="DATASET TRIGGER" enabled="true" />
+          <object-type name="DATABASE TRIGGER" enabled="true" />
+          <object-type name="SYNONYM" enabled="false" />
+          <object-type name="SEQUENCE" enabled="true" />
+          <object-type name="PROCEDURE" enabled="true" />
+          <object-type name="FUNCTION" enabled="true" />
+          <object-type name="PACKAGE" enabled="true" />
+          <object-type name="TYPE" enabled="true" />
+          <object-type name="TYPE ATTRIBUTE" enabled="false" />
+          <object-type name="ARGUMENT" enabled="false" />
+          <object-type name="DIMENSION" enabled="false" />
+          <object-type name="CLUSTER" enabled="false" />
+          <object-type name="DBLINK" enabled="true" />
+        </lookup-objects>
+        <force-database-load value="false" />
+        <prompt-connection-selection value="true" />
+        <prompt-schema-selection value="true" />
+      </lookup-filters>
+    </navigation-settings>
+    <dataset-grid-settings>
+      <general>
+        <enable-zooming value="true" />
+        <enable-column-tooltip value="true" />
+      </general>
+      <sorting>
+        <nulls-first value="true" />
+        <max-sorting-columns value="4" />
+      </sorting>
+      <tracking-columns>
+        <columnNames value="" />
+        <visible value="true" />
+        <editable value="false" />
+      </tracking-columns>
+    </dataset-grid-settings>
+    <dataset-editor-settings>
+      <text-editor-popup>
+        <active value="false" />
+        <active-if-empty value="false" />
+        <data-length-threshold value="100" />
+        <popup-delay value="1000" />
+      </text-editor-popup>
+      <values-actions-popup>
+        <show-popup-button value="true" />
+        <element-count-threshold value="1000" />
+        <data-length-threshold value="250" />
+      </values-actions-popup>
+      <general>
+        <fetch-block-size value="100" />
+        <fetch-timeout value="30" />
+        <trim-whitespaces value="true" />
+        <convert-empty-strings-to-null value="true" />
+        <select-content-on-cell-edit value="true" />
+        <large-value-preview-active value="true" />
+      </general>
+      <filters>
+        <prompt-filter-dialog value="true" />
+        <default-filter-type value="BASIC" />
+      </filters>
+      <qualified-text-editor text-length-threshold="300">
+        <content-types>
+          <content-type name="Text" enabled="true" />
+          <content-type name="Properties" enabled="true" />
+          <content-type name="XML" enabled="true" />
+          <content-type name="DTD" enabled="true" />
+          <content-type name="HTML" enabled="true" />
+          <content-type name="XHTML" enabled="true" />
+          <content-type name="Java" enabled="true" />
+          <content-type name="SQL" enabled="true" />
+          <content-type name="PL/SQL" enabled="true" />
+          <content-type name="Groovy" enabled="true" />
+          <content-type name="AIDL" enabled="true" />
+          <content-type name="YAML" enabled="true" />
+          <content-type name="Manifest" enabled="true" />
+        </content-types>
+      </qualified-text-editor>
+      <record-navigation>
+        <navigation-target value="VIEWER" />
+      </record-navigation>
+    </dataset-editor-settings>
+    <code-editor-settings>
+      <general>
+        <show-object-navigation-gutter value="false" />
+        <show-spec-declaration-navigation-gutter value="true" />
+        <enable-spellchecking value="true" />
+        <enable-reference-spellchecking value="false" />
+      </general>
+      <confirmations>
+        <save-changes value="false" />
+        <revert-changes value="true" />
+      </confirmations>
+    </code-editor-settings>
+    <code-completion-settings>
+      <filters>
+        <basic-filter>
+          <filter-element type="RESERVED_WORD" id="keyword" selected="true" />
+          <filter-element type="RESERVED_WORD" id="function" selected="true" />
+          <filter-element type="RESERVED_WORD" id="parameter" selected="true" />
+          <filter-element type="RESERVED_WORD" id="datatype" selected="true" />
+          <filter-element type="RESERVED_WORD" id="exception" selected="true" />
+          <filter-element type="OBJECT" id="schema" selected="true" />
+          <filter-element type="OBJECT" id="role" selected="true" />
+          <filter-element type="OBJECT" id="user" selected="true" />
+          <filter-element type="OBJECT" id="privilege" selected="true" />
+          <user-schema>
+            <filter-element type="OBJECT" id="table" selected="true" />
+            <filter-element type="OBJECT" id="view" selected="true" />
+            <filter-element type="OBJECT" id="materialized view" selected="true" />
+            <filter-element type="OBJECT" id="index" selected="true" />
+            <filter-element type="OBJECT" id="constraint" selected="true" />
+            <filter-element type="OBJECT" id="trigger" selected="true" />
+            <filter-element type="OBJECT" id="synonym" selected="false" />
+            <filter-element type="OBJECT" id="sequence" selected="true" />
+            <filter-element type="OBJECT" id="procedure" selected="true" />
+            <filter-element type="OBJECT" id="function" selected="true" />
+            <filter-element type="OBJECT" id="package" selected="true" />
+            <filter-element type="OBJECT" id="type" selected="true" />
+            <filter-element type="OBJECT" id="dimension" selected="true" />
+            <filter-element type="OBJECT" id="cluster" selected="true" />
+            <filter-element type="OBJECT" id="dblink" selected="true" />
+          </user-schema>
+          <public-schema>
+            <filter-element type="OBJECT" id="table" selected="false" />
+            <filter-element type="OBJECT" id="view" selected="false" />
+            <filter-element type="OBJECT" id="materialized view" selected="false" />
+            <filter-element type="OBJECT" id="index" selected="false" />
+            <filter-element type="OBJECT" id="constraint" selected="false" />
+            <filter-element type="OBJECT" id="trigger" selected="false" />
+            <filter-element type="OBJECT" id="synonym" selected="false" />
+            <filter-element type="OBJECT" id="sequence" selected="false" />
+            <filter-element type="OBJECT" id="procedure" selected="false" />
+            <filter-element type="OBJECT" id="function" selected="false" />
+            <filter-element type="OBJECT" id="package" selected="false" />
+            <filter-element type="OBJECT" id="type" selected="false" />
+            <filter-element type="OBJECT" id="dimension" selected="false" />
+            <filter-element type="OBJECT" id="cluster" selected="false" />
+            <filter-element type="OBJECT" id="dblink" selected="false" />
+          </public-schema>
+          <any-schema>
+            <filter-element type="OBJECT" id="table" selected="true" />
+            <filter-element type="OBJECT" id="view" selected="true" />
+            <filter-element type="OBJECT" id="materialized view" selected="true" />
+            <filter-element type="OBJECT" id="index" selected="true" />
+            <filter-element type="OBJECT" id="constraint" selected="true" />
+            <filter-element type="OBJECT" id="trigger" selected="true" />
+            <filter-element type="OBJECT" id="synonym" selected="true" />
+            <filter-element type="OBJECT" id="sequence" selected="true" />
+            <filter-element type="OBJECT" id="procedure" selected="true" />
+            <filter-element type="OBJECT" id="function" selected="true" />
+            <filter-element type="OBJECT" id="package" selected="true" />
+            <filter-element type="OBJECT" id="type" selected="true" />
+            <filter-element type="OBJECT" id="dimension" selected="true" />
+            <filter-element type="OBJECT" id="cluster" selected="true" />
+            <filter-element type="OBJECT" id="dblink" selected="true" />
+          </any-schema>
+        </basic-filter>
+        <extended-filter>
+          <filter-element type="RESERVED_WORD" id="keyword" selected="true" />
+          <filter-element type="RESERVED_WORD" id="function" selected="true" />
+          <filter-element type="RESERVED_WORD" id="parameter" selected="true" />
+          <filter-element type="RESERVED_WORD" id="datatype" selected="true" />
+          <filter-element type="RESERVED_WORD" id="exception" selected="true" />
+          <filter-element type="OBJECT" id="schema" selected="true" />
+          <filter-element type="OBJECT" id="user" selected="true" />
+          <filter-element type="OBJECT" id="role" selected="true" />
+          <filter-element type="OBJECT" id="privilege" selected="true" />
+          <user-schema>
+            <filter-element type="OBJECT" id="table" selected="true" />
+            <filter-element type="OBJECT" id="view" selected="true" />
+            <filter-element type="OBJECT" id="materialized view" selected="true" />
+            <filter-element type="OBJECT" id="index" selected="true" />
+            <filter-element type="OBJECT" id="constraint" selected="true" />
+            <filter-element type="OBJECT" id="trigger" selected="true" />
+            <filter-element type="OBJECT" id="synonym" selected="true" />
+            <filter-element type="OBJECT" id="sequence" selected="true" />
+            <filter-element type="OBJECT" id="procedure" selected="true" />
+            <filter-element type="OBJECT" id="function" selected="true" />
+            <filter-element type="OBJECT" id="package" selected="true" />
+            <filter-element type="OBJECT" id="type" selected="true" />
+            <filter-element type="OBJECT" id="dimension" selected="true" />
+            <filter-element type="OBJECT" id="cluster" selected="true" />
+            <filter-element type="OBJECT" id="dblink" selected="true" />
+          </user-schema>
+          <public-schema>
+            <filter-element type="OBJECT" id="table" selected="true" />
+            <filter-element type="OBJECT" id="view" selected="true" />
+            <filter-element type="OBJECT" id="materialized view" selected="true" />
+            <filter-element type="OBJECT" id="index" selected="true" />
+            <filter-element type="OBJECT" id="constraint" selected="true" />
+            <filter-element type="OBJECT" id="trigger" selected="true" />
+            <filter-element type="OBJECT" id="synonym" selected="true" />
+            <filter-element type="OBJECT" id="sequence" selected="true" />
+            <filter-element type="OBJECT" id="procedure" selected="true" />
+            <filter-element type="OBJECT" id="function" selected="true" />
+            <filter-element type="OBJECT" id="package" selected="true" />
+            <filter-element type="OBJECT" id="type" selected="true" />
+            <filter-element type="OBJECT" id="dimension" selected="true" />
+            <filter-element type="OBJECT" id="cluster" selected="true" />
+            <filter-element type="OBJECT" id="dblink" selected="true" />
+          </public-schema>
+          <any-schema>
+            <filter-element type="OBJECT" id="table" selected="true" />
+            <filter-element type="OBJECT" id="view" selected="true" />
+            <filter-element type="OBJECT" id="materialized view" selected="true" />
+            <filter-element type="OBJECT" id="index" selected="true" />
+            <filter-element type="OBJECT" id="constraint" selected="true" />
+            <filter-element type="OBJECT" id="trigger" selected="true" />
+            <filter-element type="OBJECT" id="synonym" selected="true" />
+            <filter-element type="OBJECT" id="sequence" selected="true" />
+            <filter-element type="OBJECT" id="procedure" selected="true" />
+            <filter-element type="OBJECT" id="function" selected="true" />
+            <filter-element type="OBJECT" id="package" selected="true" />
+            <filter-element type="OBJECT" id="type" selected="true" />
+            <filter-element type="OBJECT" id="dimension" selected="true" />
+            <filter-element type="OBJECT" id="cluster" selected="true" />
+            <filter-element type="OBJECT" id="dblink" selected="true" />
+          </any-schema>
+        </extended-filter>
+      </filters>
+      <sorting enabled="true">
+        <sorting-element type="RESERVED_WORD" id="keyword" />
+        <sorting-element type="RESERVED_WORD" id="datatype" />
+        <sorting-element type="OBJECT" id="column" />
+        <sorting-element type="OBJECT" id="table" />
+        <sorting-element type="OBJECT" id="view" />
+        <sorting-element type="OBJECT" id="materialized view" />
+        <sorting-element type="OBJECT" id="index" />
+        <sorting-element type="OBJECT" id="constraint" />
+        <sorting-element type="OBJECT" id="trigger" />
+        <sorting-element type="OBJECT" id="synonym" />
+        <sorting-element type="OBJECT" id="sequence" />
+        <sorting-element type="OBJECT" id="procedure" />
+        <sorting-element type="OBJECT" id="function" />
+        <sorting-element type="OBJECT" id="package" />
+        <sorting-element type="OBJECT" id="type" />
+        <sorting-element type="OBJECT" id="dimension" />
+        <sorting-element type="OBJECT" id="cluster" />
+        <sorting-element type="OBJECT" id="dblink" />
+        <sorting-element type="OBJECT" id="schema" />
+        <sorting-element type="OBJECT" id="role" />
+        <sorting-element type="OBJECT" id="user" />
+        <sorting-element type="RESERVED_WORD" id="function" />
+        <sorting-element type="RESERVED_WORD" id="parameter" />
+      </sorting>
+      <format>
+        <enforce-code-style-case value="true" />
+      </format>
+    </code-completion-settings>
+    <execution-engine-settings>
+      <statement-execution>
+        <fetch-block-size value="100" />
+        <execution-timeout value="20" />
+        <debug-execution-timeout value="600" />
+        <focus-result value="false" />
+        <prompt-execution value="false" />
+      </statement-execution>
+      <script-execution>
+        <command-line-interfaces />
+        <execution-timeout value="300" />
+      </script-execution>
+      <method-execution>
+        <execution-timeout value="30" />
+        <debug-execution-timeout value="600" />
+        <parameter-history-size value="10" />
+      </method-execution>
+    </execution-engine-settings>
+    <operation-settings>
+      <transactions>
+        <uncommitted-changes>
+          <on-project-close value="ASK" />
+          <on-disconnect value="ASK" />
+          <on-autocommit-toggle value="ASK" />
+        </uncommitted-changes>
+        <multiple-uncommitted-changes>
+          <on-commit value="ASK" />
+          <on-rollback value="ASK" />
+        </multiple-uncommitted-changes>
+      </transactions>
+      <session-browser>
+        <disconnect-session value="ASK" />
+        <kill-session value="ASK" />
+        <reload-on-filter-change value="false" />
+      </session-browser>
+      <compiler>
+        <compile-type value="KEEP" />
+        <compile-dependencies value="ASK" />
+        <always-show-controls value="false" />
+      </compiler>
+      <debugger>
+        <debugger-type value="ASK" />
+        <use-generic-runners value="true" />
+      </debugger>
+    </operation-settings>
+    <ddl-file-settings>
+      <extensions>
+        <mapping file-type-id="VIEW" extensions="vw" />
+        <mapping file-type-id="TRIGGER" extensions="trg" />
+        <mapping file-type-id="PROCEDURE" extensions="prc" />
+        <mapping file-type-id="FUNCTION" extensions="fnc" />
+        <mapping file-type-id="PACKAGE" extensions="pkg" />
+        <mapping file-type-id="PACKAGE_SPEC" extensions="pks" />
+        <mapping file-type-id="PACKAGE_BODY" extensions="pkb" />
+        <mapping file-type-id="TYPE" extensions="tpe" />
+        <mapping file-type-id="TYPE_SPEC" extensions="tps" />
+        <mapping file-type-id="TYPE_BODY" extensions="tpb" />
+      </extensions>
+      <general>
+        <lookup-ddl-files value="true" />
+        <create-ddl-files value="false" />
+        <synchronize-ddl-files value="true" />
+        <use-qualified-names value="false" />
+        <make-scripts-rerunnable value="true" />
+      </general>
+    </ddl-file-settings>
+    <general-settings>
+      <regional-settings>
+        <date-format value="MEDIUM" />
+        <number-format value="UNGROUPED" />
+        <locale value="SYSTEM_DEFAULT" />
+        <use-custom-formats value="false" />
+      </regional-settings>
+      <environment>
+        <environment-types>
+          <environment-type id="development" name="Development" description="Development environment" color="-2430209/-12296320" readonly-code="false" readonly-data="false" />
+          <environment-type id="integration" name="Integration" description="Integration environment" color="-2621494/-12163514" readonly-code="true" readonly-data="false" />
+          <environment-type id="production" name="Production" description="Productive environment" color="-11574/-10271420" readonly-code="true" readonly-data="true" />
+          <environment-type id="other" name="Other" description="" color="-1576/-10724543" readonly-code="false" readonly-data="false" />
+        </environment-types>
+        <visibility-settings>
+          <connection-tabs value="true" />
+          <dialog-headers value="true" />
+          <object-editor-tabs value="true" />
+          <script-editor-tabs value="false" />
+          <execution-result-tabs value="true" />
+        </visibility-settings>
+      </environment>
+    </general-settings>
+  </component>
+  <component name="DBNavigator.Project.StatementExecutionManager">
+    <execution-variables />
+  </component>
+</project>

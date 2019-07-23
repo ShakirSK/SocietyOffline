@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardview"
+    app:elevation="3dp"
+    app:cardUseCompatPadding="true"
+    app:cardCornerRadius="10dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="3dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Member Name : "
+            android:id="@+id/membername"/>
+        <TextView
+            android:id="@+id/memname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/membername"
+            android:textSize="15dp"
+            android:hint=" Lucky Carlo"/>
+
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Request Date : "
+            android:layout_below="@+id/membername"/>
+        <TextView
+            android:id="@+id/reqdate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/date"
+            android:hint="10/07/2018"
+            android:textSize="15dp"
+            android:layout_below="@+id/membername"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/date"
+            android:layout_marginTop="3dp"
+            android:text="Request Id : "
+            android:id="@+id/memberid"/>
+        <TextView
+            android:id="@+id/membid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/memberid"
+            android:layout_below="@+id/date"
+            android:hint=" 101"
+            android:textSize="15dp"
+            android:layout_marginTop="3dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/memberid"
+            android:layout_marginTop="3dp"
+            android:text="Request Status : "
+            android:id="@+id/memberrequest"/>
+        <TextView
+            android:id="@+id/here"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/memberrequest"
+            android:layout_below="@+id/memberid"
+            android:layout_marginTop="3dp"
+            android:textSize="15dp"
+            android:hint="Close "/>
+        <ImageView
+            android:id="@+id/actbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/ic_reply_black_24dp"
+            android:textColor="@color/white"
+            android:layout_below="@+id/memberid" />
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

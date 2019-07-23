@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".maneger.Report.Otherreport">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/app"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+        <android.support.v7.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/gradient"
+            android:id="@+id/toolbar">
+        </android.support.v7.widget.Toolbar>
+    </android.support.design.widget.AppBarLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="User Name :   admin"
+        android:id="@+id/username"
+        android:layout_below="@+id/app"
+        android:textSize="25dp"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/gray"
+        android:layout_marginTop="100dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Password   :   admin"
+        android:id="@+id/password"
+        android:textSize="25dp"
+        android:textColor="@color/gray"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/username" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/btnheight"
+        android:layout_below="@+id/password"
+        android:id="@+id/openurl"
+        android:text="Open Report"
+        android:textColor="@color/white"
+        android:background="@drawable/sqrbtn"
+        android:layout_marginTop="35dp"
+        android:ems="14"
+        android:layout_centerHorizontal="true"/>
+</RelativeLayout>

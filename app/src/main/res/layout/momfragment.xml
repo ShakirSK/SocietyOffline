@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/app"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+        <android.support.v7.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/gradient"
+            android:id="@+id/toolbar">
+        </android.support.v7.widget.Toolbar>
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/cardview"
+        app:cardElevation="4dp"
+        android:layout_below="@id/app"
+        android:layout_marginTop="10dp"
+        app:cardUseCompatPadding="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/relative"
+            android:padding="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Upload MOM Report"
+                android:id="@+id/upload"
+                android:layout_marginTop="10dp"/>
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/title"
+                android:ems="10"
+                android:hint="Enter title"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/upload"/>
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/uplodimg"
+                android:ems="8"
+                android:hint="Choose File"
+                android:layout_marginTop="3dp"
+                android:layout_below="@+id/title"/>
+
+            <ImageView
+                android:id="@+id/attach"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_attach_file_black_24dp"
+                android:layout_toRightOf="@+id/uplodimg"
+                android:layout_below="@+id/title"
+                android:layout_marginTop="18dp"/>
+
+            <Button
+                android:id="@+id/btn"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/btnheight"
+                android:layout_below="@+id/uplodimg"
+                android:layout_marginTop="10dp"
+                android:ems="7"
+                android:text="Upload"
+                android:textColor="@color/white"
+                android:background="@drawable/gradient"
+                android:drawableLeft="@drawable/ic_file_upload_black_24dp"
+                android:textAllCaps="false"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:id="@+id/messtxt"
+                android:layout_below="@+id/btn"
+                android:layout_marginTop="15dp"/>
+            <ProgressBar
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/progressbar"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/messtxt"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:indeterminate="false"
+                android:max="100"
+                android:minHeight="20dp"
+                android:progress="2"
+                android:visibility="gone"
+                android:progressBackgroundTint="@color/colorPrimaryDark" />
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+    <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/relative4"
+    android:padding="10dp"
+    android:gravity="center"
+    android:layout_below="@+id/cardview">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="MOM Reports"
+        android:textColor="@color/gray"
+        android:layout_marginTop="10dp"
+        android:id="@+id/momeport1"/>
+    <ImageView
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/filter"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/ic_date_range_black_24dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/recycleview"
+        android:layout_below="@+id/relative4">
+
+    </android.support.v7.widget.RecyclerView>
+    </RelativeLayout>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/done"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="130dp"
+        android:background="@drawable/done"/>
+
+    <TextView
+        android:layout_below="@+id/done"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:padding="10dp"
+        android:background="@drawable/square"
+        android:textStyle="bold"
+        android:textColor="@color/blue"
+        android:text="Payment Success Success Success SuccessSuccess"
+        android:textAlignment="center"
+        android:id="@+id/skill" />
+<Button
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Ok"
+    android:layout_below="@+id/skill"
+    android:id="@+id/donebtn"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="15dp"
+    android:ems="7"/>
+
+
+</RelativeLayout>

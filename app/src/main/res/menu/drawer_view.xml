@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_fragment_home"
+            android:title="Home" />
+        <item
+            android:id="@+id/nav_fragment_report"
+            android:title="Reports" />
+        <item
+            android:id="@+id/nav_fragment_member_report"
+            android:title="Member Summary" />
+      <!--  <item
+            android:id="@+id/otherreport"
+            android:title="Other Report"/>  -->
+        <item
+            android:id="@+id/partyledger"
+            android:title="Party Ledger"/>
+        <item
+            android:id="@+id/salesregister"
+            android:title="Sales Register"/>
+
+        <item
+            android:id="@+id/daybook"
+            android:title="Daybook"/>
+
+        <item
+            android:id="@+id/trialbalance"
+            android:title="Trial Balance"/>
+
+        <!--  <item
+              android:id="@+id/nav_fragment_addmemb"
+              android:title="Add Member"/>
+
+         <item
+              android:id="@+id/nav_fragment_bulletine"
+              android:title="Bulletin Board" />
+
+          <item
+              android:id="@+id/nav_fragment_activities"
+              android:title="Society Activity" />
+
+          <item
+              android:id="@+id/nav_fragment_processaccount"
+              android:title="Process Society Acoountng"/>
+
+          <item
+              android:id="@+id/nav_fragment_notice"
+              android:title="Process Member Request" />
+
+
+          <item
+              android:id="@+id/nav_fragment_notification"
+              android:title="Notifications" />-->
+        <item
+            android:id="@+id/createbill"
+            android:title="Create Bill"/>
+        <item
+            android:id="@+id/nav_fragment_mom"
+            android:title="MOM" />
+        <item
+            android:id="@+id/nav_fragment_audit"
+            android:title="Audit Reports" />
+
+        <item
+            android:id="@+id/profile"
+            android:title="Profile"/>
+
+        <item
+            android:id="@+id/nav_fragment_changepass"
+            android:title="Change Password" />
+
+        <item
+            android:id="@+id/logout"
+            android:title="Logout"/>
+    </group>
+</menu>
+
+

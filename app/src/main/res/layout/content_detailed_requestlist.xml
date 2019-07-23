@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fab="http://schemas.android.com/tools">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/app"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+        <android.support.v7.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/gradient"
+            android:id="@+id/toolbar">
+        </android.support.v7.widget.Toolbar>
+    </android.support.design.widget.AppBarLayout>
+
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/cardview"
+        app:cardElevation="4dp"
+        android:layout_margin="3dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="0dp"
+        app:cardUseCompatPadding="true"
+        android:layout_below="@+id/app">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/request"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Request id : "
+                android:textSize="15dp"
+                android:padding="3dp"/>
+
+            <TextView
+                android:id="@+id/blank"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:layout_toRightOf="@+id/request"
+                android:hint="101"
+                android:text="15"
+                android:padding="3dp"/>
+
+            <TextView
+                android:id="@+id/reqdate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/request"
+                android:text="Request Date : "
+                android:textSize="15dp"
+                android:padding="3dp"/>
+
+            <TextView
+                android:id="@+id/blank2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/reqdate"
+                android:layout_below="@+id/blank"
+                android:hint="11/07/2018"
+                android:padding="3dp"
+                android:textSize="15dp"
+                />
+
+            <TextView
+                android:id="@+id/showstatus2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/reqdate"
+                android:text="Request Status : "
+                android:textSize="15dp"
+                android:padding="3dp"/>
+
+            <TextView
+                android:id="@+id/status2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/showstatus2"
+                android:layout_toEndOf="@+id/showstatus2"
+                android:layout_toRightOf="@+id/showstatus2"
+                android:hint="Open"
+                android:padding="3dp"
+                android:textSize="15dp"/>
+
+            <TextView
+                android:id="@+id/showreqmsg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/showstatus2"
+                android:padding="3dp"
+                android:text="Request Message  : "
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/reqmsg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/showreqmsg"
+                android:layout_marginTop="3dp"
+                android:layout_marginLeft="10dp"
+                android:text="request mesg"
+                android:textSize="15dp"
+                android:padding="3dp"/>
+
+            <TextView
+                android:id="@+id/showresponce"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/reqmsg"
+                android:layout_marginTop="03dp"
+                android:text="Response Message   : "
+                android:textSize="15dp"
+                android:padding="3dp"/>
+
+            <TextView
+                android:id="@+id/responce"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/showresponce"
+                android:layout_marginTop="3dp"
+                android:layout_marginLeft="10dp"
+                android:text="resp mesg"
+                android:textSize="15dp"
+                android:padding="3dp"/>
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>

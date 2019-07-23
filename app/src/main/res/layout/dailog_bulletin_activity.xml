@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:padding="10dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Message Send Successfully"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/square"
+        android:textStyle="bold"
+        android:textColor="@color/blue"
+        android:padding="10dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/txtmesg"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/deleteyes"
+        android:text="OK"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="20dp"
+        android:layout_below="@+id/txtmesg" />
+</RelativeLayout>

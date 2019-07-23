@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1074210820260",
+    "firebase_url": "https://news365-845e9.firebaseio.com",
+    "project_id": "news365-845e9",
+    "storage_bucket": "news365-845e9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1074210820260:android:642aa4e9eb00a0e9",
+        "android_client_info": {
+          "package_name": "test.soc365.society365"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1074210820260-u11jet57njofanufvqc56e9nm3nvtrvq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBcOEC9rITsdbsNkWbu2kSaxKM_U2gg3BQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1074210820260-u11jet57njofanufvqc56e9nm3nvtrvq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

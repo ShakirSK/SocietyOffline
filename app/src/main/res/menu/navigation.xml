@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <!--android:icon="@drawable/feednew"-->
+    <item
+        android:id="@+id/navigation_home"
+        android:icon="@drawable/piechart"
+        android:title="Dashboard"
+        />
+
+    <item
+        android:id="@+id/navigation_mycontest"
+        android:icon="@drawable/cityscape"
+        android:checked="true"
+        android:title="Party" />
+
+
+    <item
+        android:id="@+id/navigation_me"
+        android:icon="@drawable/box"
+        android:title="Reports" />
+
+    <item
+        android:id="@+id/navigation_more"
+        android:icon="@drawable/growth"
+        android:title="Settings" />
+</menu>
